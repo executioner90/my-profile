@@ -20,6 +20,7 @@ storage/*.key
 .env
 .env.production
 .env.backup
+.env.encrypted
 
 Homestead.yaml
 Homestead.json
