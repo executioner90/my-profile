@@ -1,70 +1,22 @@
 /* Imports */
-@import "../../node_modules/font-awesome/css/font-awesome.css";
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* Imports */
 
 /* Custom styling */
 body {
+    font-family: "Raleway", sans-serif;
     overflow: hidden;
-    background-color: rgb(34, 34, 34);
-    text-align: center;
-    /* Responsive font size */
-    @screen sm {
-        font-size: 1rem;
-    }
-    @screen md {
-        font-size: 1.6rem;
-    }
-    @screen lg {
-        font-size: 1.8rem;
-    }
-    @screen xl {
-        font-size: 2rem;
-    }
+    background-color: rgba(34, 34, 34, 0.96);
+    text-align: center
 }
 
-/* Home page background */
-#myCanvas {
-    position: absolute;
-    z-index: -1;
-}
-/* Home page background */
-
-/* View my work button */
-.button {
-    color: #e31b6d;
-    border-color: #e31b6d;
+.myCanvas {
+    display: block;
 }
 
-.button:hover {
-    background-color: #e31b6d;
-}
-
-.hover\:show-down:hover .fa-arrow-right {
-    display: none;
-}
-
-.hover\:show-down:hover .fa-arrow-down {
-    display: inline-block;
-}
-
-.hover\:show-down .fa-arrow-down {
-    display: none;
-}
-
-.hover\:show-down {
-    transition: all 0.5s ease-out;
-}
-/* View my work button */
-
-.highlight {
-    color: #e31b6d;
-}
-
-.slogan {
-    font-family: "Curlz MT", serif;
-    font-size: 1.2rem;
+section {
+    color: #fff;
+    height: calc(100vh + 53px);
+    padding: 0 10px;
 }
