@@ -12,7 +12,7 @@
 </head>
 <body>
 <canvas id="myCanvas"></canvas>
-<div class="flex flex-col h-screen justify-center items-center">
+<div class="flex flex-col h-screen justify-center items-center text-center">
     <div class="text-white text-lg md:text-4xl mb-5">
         Hello, I'm <span class="highlight">Mohammad Aldaas</span>.
         <br>
