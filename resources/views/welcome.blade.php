@@ -11,8 +11,7 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
 
-    <body>
-        <div class="relative">
+    <body class="scroll-smooth">
             {{-- Home page --}}
             <div id="home">
                 <canvas id="myCanvas"></canvas>
@@ -36,36 +35,48 @@
             </div>
 
             <nav class="bg-gray-800 top-0 sticky flex flex-wrap sm:flex-nowrap w-full mx-auto sm:px-4 sm:flex sm:items-center sm:justify-between z-40">
-                <div id="navbar-collapse-basic" class="navbar overflow-hidden transition-all duration-300 basis-full grow sm:block">
-                    <div class="flex flex-col gap-8 mt-5 sm:flex-row sm:items-center sm:mt-0 sm:ps-5">
+                <div class="navbar overflow-hidden transition-all duration-300 basis-full grow sm:block">
+                    <div class="flex flex-col gap-8 sm:flex-row sm:items-center sm:mt-0 sm:ps-5">
                         <img src="{{ asset('/images/logo-white-removebg.png') }}" class="w-16 py-1" alt="Logo">
-                        <a class="py-3 text-lg text-white hover:text-rose-800 focus:outline-none focus:text-rose-800 active:text-4xl"
-                           href="#home">Home</a>
-                        <a class="py-3 text-lg text-white hover:text-rose-800 focus:outline-none focus:text-rose-800 active:text-4xl"
-                           href="#about">About</a>
-                        <a class="py-3 text-lg text-white hover:text-rose-800 focus:outline-none focus:text-rose-800"
-                           href="#projects">Projects</a>
-                        <a class="py-3 text-lg text-white hover:text-rose-800 focus:outline-none focus:text-rose-800"
-                           href="#contact">Contact</a>
+                        <a
+                            class="py-3 text-lg text-white hover:text-rose-800 focus:outline-none focus:text-rose-800"
+                            href="#home"
+                        >
+                            Home
+                        </a>
+                        <a
+                            class="py-3 text-lg text-white hover:text-rose-800 focus:outline-none focus:text-rose-800"
+                            href="#about"
+                        >
+                            About
+                        </a>
+                        <a
+                            class="py-3 text-lg text-white hover:text-rose-800 focus:outline-none focus:text-rose-800"
+                            href="#projects">
+                            Projects
+                        </a>
+                        <a
+                            class="py-3 text-lg text-white hover:text-rose-800 focus:outline-none focus:text-rose-800"
+                            href="#contact"
+                        >
+                            Contact
+                        </a>
                     </div>
                 </div>
             </nav>
 
-            <div class="container">
-                <div id="about" class="h-screen w-screen bg-rose-500">
-                    <span class="text-4xl">about</span>
-                </div>
-
-                {{-- my projects --}}
-                <div id="projects" class="h-screen w-screen bg-amber-800">
-                    <span class="text-4xl">projects</span>
-                </div>
-
-                {{-- contact me --}}
-                <div id="contact" class="h-screen w-screen bg-violet-700">
-                    <span class="text-4xl">contact</span>
-                </div>
+            <div id="about" class="h-screen w-screen bg-rose-500">
+                <span class="text-4xl">about</span>
             </div>
-        </div>
+
+            {{-- my projects --}}
+            <div id="projects" class="h-screen w-screen bg-amber-800">
+                <span class="text-4xl">projects</span>
+            </div>
+
+            {{-- contact me --}}
+            <div id="contact" class="h-screen w-screen bg-violet-700">
+                <span class="text-4xl">contact</span>
+            </div>
     </body>
 </html>
