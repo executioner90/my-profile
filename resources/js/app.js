@@ -1,2 +1,2 @@
 import './bootstrap';
-import './welcome/background.js'
+import './welcome/background.js';

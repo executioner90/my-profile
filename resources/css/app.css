@@ -7,9 +7,12 @@
 /* Imports */
 
 /* Custom styling */
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
-    overflow: hidden;
-    background-color: rgb(34, 34, 34);
     /* Responsive font size */
     @screen sm {
         font-size: 1rem;
@@ -27,6 +30,7 @@ body {
 
 /* Home page background */
 #myCanvas {
+    background-color: rgb(34, 34, 34);
     position: absolute;
     z-index: -1;
 }
