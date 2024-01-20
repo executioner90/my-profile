@@ -11,7 +11,7 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
 
-    <body class="scroll-smooth">
+    <body>
             {{-- Home page --}}
             <div id="home">
                 <canvas id="myCanvas"></canvas>
