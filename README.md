@@ -2,9 +2,9 @@
   <h1>
     Hello there
     <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGQ3amtkOHdjZmpjb2U0OWo1cWFxbTE5ZTFjM3MwbnhvdWMxNDR0ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/hvRJCLFzcasrR4ia7z/giphy.gif" alt="Waving" width="30" />
-  </h1>
-
-  <img src="public/images/logo-white-removebg.png" alt="LOGO" width="513"/>
+    <br>
+<img src="public/images/logo-white-removebg.png" alt="LOGO" width="513"/>
+</h1>
 
   <h3>
     It's Mohammad Aldaas Introducing himself as one of the finest software developers.
