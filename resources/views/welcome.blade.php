@@ -34,29 +34,34 @@
                 </div>
             </div>
 
-            <nav class="bg-gray-800 top-0 sticky flex flex-wrap sm:flex-nowrap w-full mx-auto sm:px-4 sm:flex sm:items-center sm:justify-between z-40">
+            <nav class="bg-gray-950 top-0 sticky flex flex-wrap sm:flex-nowrap w-full mx-auto sm:px-4 sm:flex sm:items-center sm:justify-between z-40">
                 <div class="navbar overflow-hidden transition-all duration-300 basis-full grow sm:block">
                     <div class="flex flex-col gap-8 sm:flex-row sm:items-center sm:mt-0 sm:ps-5">
                         <img src="{{ asset('/images/logo-white-removebg.png') }}" class="w-16 py-1" alt="Logo">
                         <a
-                            class="py-3 text-lg text-white hover:text-rose-800 focus:outline-none focus:text-rose-800"
+                            class="py-3 text-xl text-white hover:text-green-400 active:text-green-400 focus:outline-none"
+                            id="homeLink"
                             href="#home"
                         >
                             Home
                         </a>
                         <a
-                            class="py-3 text-lg text-white hover:text-rose-800 focus:outline-none focus:text-rose-800"
+                            class="py-3 text-xl text-white hover:text-green-400 active:text-green-400 focus:outline-none"
+                            id="aboutLink"
                             href="#about"
                         >
                             About
                         </a>
                         <a
-                            class="py-3 text-lg text-white hover:text-rose-800 focus:outline-none focus:text-rose-800"
-                            href="#projects">
+                            class="py-3 text-xl text-white hover:text-green-400 active:text-green-400 focus:outline-none"
+                            id="projectsLink"
+                            href="#projects"
+                        >
                             Projects
                         </a>
                         <a
-                            class="py-3 text-lg text-white hover:text-rose-800 focus:outline-none focus:text-rose-800"
+                            class="py-3 text-xl text-white hover:text-green-400 active:text-green-400 focus:outline-none"
+                            id="contactLink"
                             href="#contact"
                         >
                             Contact
@@ -65,6 +70,7 @@
                 </div>
             </nav>
 
+            {{-- About me --}}
             <div id="about" class="h-screen w-screen bg-rose-500">
                 <span class="text-4xl">about</span>
             </div>
