@@ -24,13 +24,13 @@
                         <span class="slogan">Crafting Code, Building Dreams: Your Vision, Our Expertise!</span>
                     </div>
 
-                    <a href="#about">
+                    <div class="cursor-pointer" onclick="document.getElementById('about').scrollIntoView()">
                         <div class="bg-transparent button hover:text-white py-2 px-4 border rounded hover:show-down">
                             View my work
                             <i class="fa fa-arrow-right text-base pl-2"></i>
                             <i class="fa fa-arrow-down text-base pl-2"></i>
                         </div>
-                    </a>
+                    </div>
                 </div>
             </div>
 
@@ -38,34 +38,34 @@
                 <div class="navbar overflow-hidden transition-all duration-300 basis-full grow sm:block">
                     <div class="flex flex-col gap-8 sm:flex-row sm:items-center sm:mt-0 sm:ps-5">
                         <img src="{{ asset('/images/logo-white-removebg.png') }}" class="w-16 py-1" alt="Logo">
-                        <a
-                            class="py-3 text-xl text-white hover:text-green-400 active:text-green-400 focus:outline-none"
+                        <div
+                            class="py-3 text-xl text-white hover:text-green-400 active:text-green-400 focus:outline-none cursor-pointer"
+                            onclick="document.getElementById('home').scrollIntoView()"
                             id="homeLink"
-                            href="#home"
                         >
                             Home
-                        </a>
-                        <a
-                            class="py-3 text-xl text-white hover:text-green-400 active:text-green-400 focus:outline-none"
+                        </div>
+                        <div
+                            class="py-3 text-xl text-white hover:text-green-400 active:text-green-400 focus:outline-none cursor-pointer"
+                            onclick="document.getElementById('about').scrollIntoView()"
                             id="aboutLink"
-                            href="#about"
                         >
                             About
-                        </a>
-                        <a
-                            class="py-3 text-xl text-white hover:text-green-400 active:text-green-400 focus:outline-none"
+                        </div>
+                        <div
+                            class="py-3 text-xl text-white hover:text-green-400 active:text-green-400 focus:outline-none cursor-pointer"
+                            onclick="document.getElementById('projects').scrollIntoView()"
                             id="projectsLink"
-                            href="#projects"
                         >
                             Projects
-                        </a>
-                        <a
-                            class="py-3 text-xl text-white hover:text-green-400 active:text-green-400 focus:outline-none"
+                        </div>
+                        <div
+                            class="py-3 text-xl text-white hover:text-green-400 active:text-green-400 focus:outline-none cursor-pointer"
+                            onclick="document.getElementById('contact').scrollIntoView()"
                             id="contactLink"
-                            href="#contact"
                         >
                             Contact
-                        </a>
+                        </div>
                     </div>
                 </div>
             </nav>
