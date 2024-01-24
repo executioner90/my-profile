@@ -63,6 +63,7 @@ body {
 }
 /* View my work button */
 
+
 .highlight {
     color: #e31b6d;
 }
@@ -70,4 +71,9 @@ body {
 .slogan {
     font-family: "Curlz MT", serif;
     font-size: 1.2rem;
+}
+
+.nav-item-focused {
+    color: rgb(74 222 128) !important;
+    transition: color 0.2s ease-in !important;
 }
