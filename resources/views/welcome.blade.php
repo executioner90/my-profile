@@ -76,8 +76,121 @@
         </nav>
 
         {{-- About me --}}
-        <div id="about" class="min-h-screen w-screen bg-rose-500">
-            <span class="text-4xl">about</span>
+        <div id="about" class="min-h-screen w-screen about">
+            <div class="grid grid-cols-4 gap-10">
+                <div class="about-me-card">
+                    Last station The Netherlands
+                </div>
+
+                <div class="about-me-card">
+                    Embarking on a journey to Europe (Germany one year)
+                </div>
+
+                <div class="about-me-card">
+                    Hard work in Lebanon
+                </div>
+
+                <div class="about-me-card">
+                    Embarking on a journey to Lebanon
+                </div>
+            </div>
+
+            <div class="grid grid-cols-4 gap-10">
+                <div class="about-me-card">
+                    Fulltime study and working simultaneously
+                </div>
+                <div class="col-span-2">
+                    <div class="grid grid-cols-3">
+                        <div class="about-me-card">
+                            - Flexibility
+                            - Understand more about individuality
+                        </div>
+                        <div></div>
+                        <div class="about-me-card">
+                            - Stay positive (except when it comes to corona)
+                            - Work under pressure
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-me-card">
+                    War
+                </div>
+            </div>
+
+            <div class="grid grid-cols-4 gap-10">
+                <div class="about-me-card">
+                    High school certificates
+                    - English
+                    - Maths
+                    - Physics
+                </div>
+
+                <div class="col-span-2">
+                    <div class="grid grid-cols-3">
+                        <div class="about-me-card">
+                            - Never give up
+                            - Patience acquired
+                        </div>
+
+                        <div class="about-me-card">
+                            photo of me now!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-me-card">
+                    Highs school education in Syria
+                </div>
+            </div>
+
+            <div class="grid grid-cols-4 gap-10">
+                <div class="about-me-special-card">
+                    College Diploma Software developer
+                </div>
+
+                <div class="col-span-2">
+                    <div class="grid grid-cols-3">
+                        <div class="about-me-card">
+                            - Analytical skills
+                            - Practicality
+                            - Teamwork
+                        </div>
+
+                        <div></div>
+
+                        <div class="about-me-card">
+                            - Dedication
+                            - Commitment
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="about-me-special-card">
+                    From childhood till now, my dream has been a constant companion, always alive and burning bright - to be a software developer.
+                </div>
+            </div>
+
+            <div class="grid grid-cols-4 gap-10">
+                <div class="about-me-card">
+                    A software developer for <a href="https://www.inktweb.nl">Inktweb.nl</a>
+                </div>
+
+                <div class="col-span-2">
+                    <div class="grid grid-cols-3">
+                        <div></div>
+                        <div class="about-me-special-card">
+                            Dream achieved!
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="about-me-card">
+                    Personal photo when I was kid
+                </div>
+            </div>
         </div>
 
         {{-- my projects --}}
