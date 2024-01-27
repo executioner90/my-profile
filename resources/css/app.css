@@ -80,19 +80,23 @@ body {
 /* About page */
 .about {
     background-color: #ebebe9;
-    padding: 5rem;
+    padding: 4.5rem;
     font-size: 1.4rem;
 }
 
 .about-me-special-card{
     background-color: #38c38a;
+    color: #ebebe9;
+
 }
 
 .about-me-card{
     background-color: #35383d;
+    color: #ebebe9;
 }
 
 .card-link {
     color: #c6c6c6;
 }
 /* About page */
+
