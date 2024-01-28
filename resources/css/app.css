@@ -76,3 +76,23 @@ body {
     color: rgb(74 222 128) !important;
     transition: color 0.2s ease-in !important;
 }
+
+/* About page */
+.about {
+    background-color: #ebebe9;
+    padding: 5rem;
+    font-size: 1.4rem;
+}
+
+.about-me-special-card{
+    background-color: #38c38a;
+}
+
+.about-me-card{
+    background-color: #35383d;
+}
+
+.card-link {
+    color: #c6c6c6;
+}
+/* About page */
