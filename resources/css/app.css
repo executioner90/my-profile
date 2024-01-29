@@ -15,16 +15,16 @@ html {
 body {
     /* Responsive font size */
     @screen sm {
-        font-size: 1rem;
+        font-size: 0.85rem;
     }
     @screen md {
-        font-size: 1.6rem;
+        font-size: 1rem;
     }
     @screen lg {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
     }
     @screen xl {
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
 }
 
@@ -80,19 +80,22 @@ body {
 /* About page */
 .about {
     background-color: #ebebe9;
-    padding: 5rem;
-    font-size: 1.4rem;
+    padding: 4.5rem;
 }
 
 .about-me-special-card{
     background-color: #38c38a;
+    color: #ebebe9;
+
 }
 
 .about-me-card{
     background-color: #35383d;
+    color: #ebebe9;
 }
 
 .card-link {
     color: #c6c6c6;
 }
 /* About page */
+
