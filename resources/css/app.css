@@ -15,16 +15,16 @@ html {
 body {
     /* Responsive font size */
     @screen sm {
-        font-size: 1rem;
+        font-size: 0.85rem;
     }
     @screen md {
-        font-size: 1.6rem;
+        font-size: 1rem;
     }
     @screen lg {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
     }
     @screen xl {
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
 }
 
@@ -81,7 +81,6 @@ body {
 .about {
     background-color: #ebebe9;
     padding: 4.5rem;
-    font-size: 1.4rem;
 }
 
 .about-me-special-card{
