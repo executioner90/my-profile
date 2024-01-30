@@ -97,5 +97,25 @@ body {
 .card-link {
     color: #c6c6c6;
 }
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.image-container img {
+    height: auto;
+    border-radius: 50%;
+}
+
+.circle-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 5px solid #38c38a; /* Adjust the color and thickness of the border */
+    border-radius: 50%;
+    box-sizing: border-box;
+}
 /* About page */
 

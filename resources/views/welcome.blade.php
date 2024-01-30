@@ -128,7 +128,8 @@
                         </div>
 
                         <div class="flex items-center justify-center text-center rounded-3xl">
-                            <div class="w-4/6">
+                            <div class="w-4/6 image-container">
+                                <div class="circle-overlay"></div>
                                 <img src="{{ asset('/images/now-me.png') }}" alt="Me now">
                             </div>
                         </div>
