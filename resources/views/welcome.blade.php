@@ -129,8 +129,10 @@
 
                         <div class="flex items-center justify-center text-center rounded-3xl">
                             <div class="w-4/6 image-container">
-                                <div class="circle-overlay"></div>
-                                <img src="{{ asset('/images/now-me.png') }}" alt="Me now">
+                                <a href="{{ asset('/pdf/mohammad-aldaas-english.pdf') }}" target="_blank">
+                                    <div class="circle-overlay"></div>
+                                    <img src="{{ asset('/images/now-me.png') }}" alt="Me now">
+                                </a>
                             </div>
                         </div>
 
