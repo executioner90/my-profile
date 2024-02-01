@@ -37,12 +37,13 @@
         {{-- Navbar --}}
         <nav class="bg-gray-950 top-0 sticky flex flex-wrap sm:flex-nowrap w-full mx-auto sm:px-4 sm:flex sm:items-center sm:justify-between z-40">
             <div class="navbar overflow-hidden transition-all duration-300 basis-full grow sm:block">
-                <div class="flex flex-col gap-12 sm:flex-row sm:items-center sm:mt-0 sm:ps-5">
+                {{-- Desktop version --}}
+                <div class="hidden md:flex flex-col gap-12 sm:flex-row sm:items-center sm:mt-0 sm:ps-5">
                     <img src="{{ asset('/images/logo-white-removebg.png') }}" class="w-16 py-1" alt="Logo">
 
                     <div
                         class="py-3 text-xl text-white hover:text-green-400 active:text-green-400 focus:outline-none cursor-pointer"
-                        onclick="document.getElementById('home').scrollIntoView()"
+                        onclick="navigate('home', false)"
                         id="homeLink"
                     >
                         Home
@@ -50,7 +51,7 @@
 
                     <div
                         class="py-3 text-xl text-white hover:text-green-400 active:text-green-400 focus:outline-none cursor-pointer"
-                        onclick="document.getElementById('about').scrollIntoView()"
+                        onclick="navigate('about', false)"
                         id="aboutLink"
                     >
                         About
@@ -58,7 +59,7 @@
 
                     <div
                         class="py-3 text-xl text-white hover:text-green-400 active:text-green-400 focus:outline-none cursor-pointer"
-                        onclick="document.getElementById('projects').scrollIntoView()"
+                        onclick="navigate('projects', false)"
                         id="projectsLink"
                     >
                         Projects
@@ -66,11 +67,80 @@
 
                     <div
                         class="py-3 text-xl text-white hover:text-green-400 active:text-green-400 focus:outline-none cursor-pointer"
-                        onclick="document.getElementById('contact').scrollIntoView()"
+                        onclick="navigate('contact', false)"
                         id="contactLink"
                     >
                         Contact
                     </div>
+                </div>
+
+                {{-- Mobile version --}}
+                <div class="md:hidden grid grid-cols-2">
+                    <div class="pl-2">
+                        <img src="{{ asset('/images/logo-white-removebg.png') }}" class="w-16 py-1" alt="Logo">
+                    </div>
+
+                    <div class="grid justify-end pr-2">
+                        <button id="toggle-btn" class="text-white hover:text-green-400 hover:animate-pulse">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                 xmlns="http://www.w3.org/2000/svg" id="menu-icon">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M4 6h16M4 12h16m-7 6h7"></path>
+                            </svg>
+
+                            <svg class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                 xmlns="http://www.w3.org/2000/svg" id="close-icon">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+
+                        </button>
+                    </div>
+                </div>
+
+                <div id="navbar-links" class="hidden md:hidden">
+                    <ul>
+                        <li>
+                            <div
+                                class="pb-3 text-xl text-white text-center hover:text-green-400 active:text-green-400 focus:outline-none cursor-pointer"
+                                onclick="navigate('home')"
+                                id="homeLink"
+                            >
+                                Home
+                            </div>
+                            <hr class="mx-8">
+                        </li>
+
+                        <li>
+                            <div
+                                class="py-3 text-xl text-white text-center hover:text-green-400 active:text-green-400 focus:outline-none cursor-pointer"
+                                onclick="navigate('about');"
+                                id="aboutLink"
+                            >
+                                About
+                            </div>
+                            <hr class="mx-8">
+                        </li>
+                        <li>
+                            <div
+                                class="py-3 text-xl text-white text-center hover:text-green-400 active:text-green-400 focus:outline-none cursor-pointer"
+                                onclick="navigate('projects');"
+                                id="projectsLink"
+                            >
+                                Projects
+                            </div>
+                            <hr class="mx-8">
+                        </li>
+                        <li>
+                            <div
+                                class="py-3 text-xl text-white text-center hover:text-green-400 active:text-green-400 focus:outline-none cursor-pointer"
+                                onclick="navigate('contact');"
+                                id="contactLink"
+                            >
+                                Contact
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -205,3 +275,34 @@
         </div>
     </body>
 </html>
+
+<script>
+    const toggleBtn = document.getElementById('toggle-btn');
+    const menuIcon = document.getElementById('menu-icon');
+    const navbarLinks = document.getElementById('navbar-links');
+    const menuClose =  document.getElementById('close-icon');
+
+    toggleBtn.addEventListener('click', () => {
+        this.toggleMenuButton();
+        this.toggleMenu();
+    });
+
+
+    function navigate(section, mobile = true) {
+        if (mobile) {
+            this.toggleMenuButton();
+            this.toggleMenu();
+        }
+
+        document.getElementById(section).scrollIntoView()
+    }
+
+    function toggleMenuButton() {
+        menuIcon.classList.toggle('hidden');
+        menuClose.classList.toggle('hidden');
+    }
+
+    function toggleMenu() {
+        navbarLinks.classList.toggle('hidden');
+    }
+</script>
