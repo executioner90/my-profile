@@ -14,7 +14,7 @@
             </div>
 
             <div class="grid justify-end pr-2">
-                <button id="toggle-btn" class="text-white hover:text-green-400 hover:animate-pulse">
+                <button id="toggle-mobile-nav-button" class="text-white hover:text-green-400 hover:animate-pulse">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                          xmlns="http://www.w3.org/2000/svg" id="menu-icon">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
