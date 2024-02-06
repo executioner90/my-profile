@@ -3,6 +3,7 @@ const toggleMobileNavBtn = document.getElementById('toggle-mobile-nav-button');
 const menuOpen = document.getElementById('menu-icon');
 const navbarLinks = document.getElementById('navbar-links');
 const menuClose =  document.getElementById('close-icon');
+let lastClickedSection = null;
 
 // Focus on nav items when user scrolling manually.
 window.addEventListener("scroll", function() {
@@ -34,6 +35,11 @@ window.addEventListener("scroll", function() {
     }
 
     focused(document.getElementById(id));
+
+    // Check if the last clicked section is currently not in view
+    if (lastClickedSection && !isElementInViewport(document.getElementById(lastClickedSection))) {
+        lastClickedSection = null;
+    }
 });
 
 // Click event on nav items.
@@ -86,7 +92,10 @@ function navigate(section, mobile = true) {
         toggleMenu();
     }
 
-    document.getElementById(section).scrollIntoView()
+    if (lastClickedSection !== section) {
+        document.getElementById(section).scrollIntoView();
+        lastClickedSection = section;
+    }
 }
 
 function toggleMenuButton() {
@@ -96,4 +105,14 @@ function toggleMenuButton() {
 
 function toggleMenu() {
     navbarLinks.classList.toggle('hidden');
+}
+
+function isElementInViewport(el) {
+    let rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
 }

@@ -14,12 +14,14 @@
     <body>
         <x-home></x-home>
 
-        <x-nav></x-nav>
+        <div>
+            <x-nav></x-nav>
 
-        <x-about></x-about>
+            <x-about></x-about>
 
-        <x-projects></x-projects>
+            <x-projects></x-projects>
 
-        <x-contact></x-contact>
+            <x-contact></x-contact>
+        </div>
     </body>
 </html>

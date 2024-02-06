@@ -1,5 +1,5 @@
-<nav class="bg-gray-950 top-0 sticky flex flex-wrap sm:flex-nowrap w-full mx-auto sm:px-4 sm:flex sm:items-center sm:justify-between z-40">
-    <div class="navbar overflow-hidden transition-all duration-300 basis-full grow sm:block">
+<nav class="bg-gray-950 top-0 sticky w-full mx-auto z-40">
+    <div class="navbar">
         {{-- Desktop version --}}
         <div class="hidden md:flex flex-col gap-12 sm:flex-row sm:items-center sm:mt-0 sm:ps-5">
             <img src="{{ asset('/images/logo-white-removebg.png') }}" class="w-16 py-1" alt="Logo">
