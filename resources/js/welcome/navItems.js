@@ -1,16 +1,13 @@
 const className = 'nav-item-focused';
 
 window.addEventListener("scroll", function() {
-    // Prevent clicking
-    document.querySelector('body').style.pointerEvents = 'none';
-
     let scrollPosition = window.scrollY;
     let parentDivs = document.querySelectorAll("body > div");
     let id = '';
 
     for (let i = 0; i < parentDivs.length; i++) {
         let div = parentDivs[i];
-        let offsetTop = div.offsetTop - 500;
+        let offsetTop = div.offsetTop - 350;
         let offsetBottom = offsetTop + div.offsetHeight;
 
         if (offsetTop <= scrollPosition && offsetBottom >= scrollPosition) {
@@ -32,11 +29,6 @@ window.addEventListener("scroll", function() {
     }
 
     focused(document.getElementById(id));
-
-    // Reset pointer event
-    setTimeout(function () {
-        document.querySelector('body').style.pointerEvents = 'auto';
-    }, 500);
 });
 
 function focused(element) {

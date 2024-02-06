@@ -24,7 +24,7 @@
                     <span class="slogan">Crafting Code, Building Dreams: Your Vision, Our Expertise!</span>
                 </div>
 
-                <div class="cursor-pointer" onclick="document.getElementById('about').scrollIntoView()">
+                <div class="cursor-pointer" onclick="navigate('about', false)">
                     <div class="bg-transparent button hover:text-white py-2 px-4 border rounded hover:show-down">
                         View my work
                         <i class="fa fa-arrow-right text-base pl-2"></i>
@@ -35,45 +35,7 @@
         </div>
 
         {{-- Navbar --}}
-        <nav class="bg-gray-950 top-0 sticky flex flex-wrap sm:flex-nowrap w-full mx-auto sm:px-4 sm:flex sm:items-center sm:justify-between z-40">
-            <div class="navbar overflow-hidden transition-all duration-300 basis-full grow sm:block">
-                <div class="flex flex-col gap-12 sm:flex-row sm:items-center sm:mt-0 sm:ps-5">
-                    <img src="{{ asset('/images/logo-white-removebg.png') }}" class="w-16 py-1" alt="Logo">
-
-                    <div
-                        class="py-3 text-xl text-white hover:text-green-400 active:text-green-400 focus:outline-none cursor-pointer"
-                        onclick="document.getElementById('home').scrollIntoView()"
-                        id="homeLink"
-                    >
-                        Home
-                    </div>
-
-                    <div
-                        class="py-3 text-xl text-white hover:text-green-400 active:text-green-400 focus:outline-none cursor-pointer"
-                        onclick="document.getElementById('about').scrollIntoView()"
-                        id="aboutLink"
-                    >
-                        About
-                    </div>
-
-                    <div
-                        class="py-3 text-xl text-white hover:text-green-400 active:text-green-400 focus:outline-none cursor-pointer"
-                        onclick="document.getElementById('projects').scrollIntoView()"
-                        id="projectsLink"
-                    >
-                        Projects
-                    </div>
-
-                    <div
-                        class="py-3 text-xl text-white hover:text-green-400 active:text-green-400 focus:outline-none cursor-pointer"
-                        onclick="document.getElementById('contact').scrollIntoView()"
-                        id="contactLink"
-                    >
-                        Contact
-                    </div>
-                </div>
-            </div>
-        </nav>
+        <x-nav></x-nav>
 
         {{-- About me --}}
         <div id="about" class="min-h-screen w-screen about">
@@ -207,3 +169,34 @@
         </div>
     </body>
 </html>
+
+<script>
+    const toggleBtn = document.getElementById('toggle-btn');
+    const menuIcon = document.getElementById('menu-icon');
+    const navbarLinks = document.getElementById('navbar-links');
+    const menuClose =  document.getElementById('close-icon');
+
+    toggleBtn.addEventListener('click', () => {
+        this.toggleMenuButton();
+        this.toggleMenu();
+    });
+
+
+    function navigate(section, mobile = true) {
+        if (mobile) {
+            this.toggleMenuButton();
+            this.toggleMenu();
+        }
+
+        document.getElementById(section).scrollIntoView()
+    }
+
+    function toggleMenuButton() {
+        menuIcon.classList.toggle('hidden');
+        menuClose.classList.toggle('hidden');
+    }
+
+    function toggleMenu() {
+        navbarLinks.classList.toggle('hidden');
+    }
+</script>
