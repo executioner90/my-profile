@@ -77,6 +77,10 @@ body {
     transition: color 0.2s ease-in !important;
 }
 
+.navbar {
+    border-bottom: solid 2px #e31b6d;
+}
+
 /* About page */
 .about {
     background-color: #ebebe9;

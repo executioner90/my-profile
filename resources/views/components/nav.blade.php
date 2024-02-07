@@ -1,19 +1,19 @@
 <nav class="bg-gray-950 top-0 sticky w-full mx-auto z-40">
     <div class="navbar">
         {{-- Desktop version --}}
-        <div class="hidden md:flex flex-col gap-12 sm:flex-row sm:items-center sm:mt-0 sm:ps-5">
-            <img src="{{ asset('/images/logo-white-removebg.png') }}" class="w-16 py-1" alt="Logo">
+        <div class="hidden md:grid grid-cols-1">
+            <div class="flex justify-center gap-20 items-center">
+                <img src="{{ asset('/images/logo-white-removebg.png') }}" class="w-14 py-2" alt="Logo">
 
-            <x-nav.items></x-nav.items>
+                <x-nav.items></x-nav.items>
+            </div>
         </div>
 
         {{-- Mobile version --}}
-        <div class="md:hidden grid grid-cols-2">
-            <div class="pl-2">
-                <img src="{{ asset('/images/logo-white-removebg.png') }}" class="w-16 py-1" alt="Logo">
-            </div>
+        <div class="grid grid-cols-2 justify-items-center md:hidden">
+            <img src="{{ asset('/images/logo-white-removebg.png') }}" class="w-14 py-2" alt="Logo">
 
-            <div class="grid justify-end pr-2">
+            <div class="grid justify-end">
                 <button id="toggle-mobile-nav-button" class="text-white hover:text-green-400 hover:animate-pulse">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                          xmlns="http://www.w3.org/2000/svg" id="menu-icon">
