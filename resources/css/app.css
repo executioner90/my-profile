@@ -38,12 +38,12 @@ body {
 
 /* View my work button */
 .button {
-    color: #e31b6d;
-    border-color: #e31b6d;
+    color: #fe7833;
+    border-color: #fe7833;
 }
 
 .button:hover {
-    background-color: #e31b6d;
+    background-color: #fe7833;
 }
 
 .hover\:show-down:hover .fa-arrow-right {
@@ -64,7 +64,7 @@ body {
 /* View my work button */
 
 .highlight {
-    color: #e31b6d;
+    color: #fe7833;
 }
 
 .slogan {
@@ -73,12 +73,12 @@ body {
 }
 
 .nav-item-focused {
-    color: rgb(74 222 128) !important;
+    color: #fe7833 !important;
     transition: color 0.2s ease-in !important;
 }
 
 .navbar {
-    border-bottom: solid 2px #e31b6d;
+    border-bottom: solid 2px #80c44c;
 }
 
 /* About page */
@@ -88,7 +88,7 @@ body {
 }
 
 .about-me-special-card{
-    background-color: #38c38a;
+    background-color: #fe7833;
     color: #ebebe9;
 
 }
@@ -117,7 +117,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    border: 5px solid #38c38a; /* Adjust the color and thickness of the border */
+    border: 5px solid #80c44c;
     border-radius: 50%;
     box-sizing: border-box;
 }
