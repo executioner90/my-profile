@@ -1,4 +1,4 @@
-<div id="about" class="min-h-screen w-screen about">
+<div id="about" class="min-h-screen w-screen about section">
     <div class="grid grid-cols-4 gap-20 mt-3.5 mb-2">
         <div class="about-me-card py-10 px-3 flex items-center justify-center text-center rounded-3xl">
             Last station The Netherlands
