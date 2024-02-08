@@ -82,11 +82,6 @@ body {
 }
 
 /* About page */
-.about {
-    background-color: #ebebe9;
-    padding: 4.5rem;
-}
-
 .about-me-special-card{
     background-color: #fe7833;
     color: #ebebe9;
@@ -98,19 +93,15 @@ body {
     color: #ebebe9;
 }
 
-.card-link {
-    color: #c6c6c6;
-}
-
 .image-container {
-    position: relative;
+    position: absolute;
     overflow: hidden;
-    border-radius: 50%;
+    margin-top: 3rem;
 }
 
 .image-container img {
-    height: auto;
-    border-radius: 50%;
+    width: 18rem;
+    height: 18rem;
 }
 
 .circle-overlay {
