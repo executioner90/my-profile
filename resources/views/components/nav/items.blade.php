@@ -1,7 +1,6 @@
 <div
-    class="@if($mobile) pb-3 w-3/4 text-center @else py-3 @endif text-xl text-white hover:text-green-400 active:text-green-400 focus:outline-none cursor-pointer"
-    onclick="navigate('home', {{ $mobile }})"
     id="homeLink"
+    class="nav-item @if($mobile) pb-3 w-3/4 text-center mobile-nav @else py-3 @endif text-xl text-white hover:text-green-400 active:text-green-400 focus:outline-none cursor-pointer"
 >
     Home
 </div>
@@ -11,9 +10,8 @@
 @endif
 
 <div
-    class="py-3 @if($mobile) w-3/4 text-center @endif text-xl text-white hover:text-green-400 active:text-green-400 focus:outline-none cursor-pointer"
-    onclick="navigate('about', {{ $mobile }})"
     id="aboutLink"
+    class="nav-item py-3 @if($mobile) w-3/4 text-center mobile-nav @endif text-xl text-white hover:text-green-400 active:text-green-400 focus:outline-none cursor-pointer"
 >
     About
 </div>
@@ -23,9 +21,8 @@
 @endif
 
 <div
-    class="py-3 @if($mobile) w-3/4 text-center @endif text-xl text-white hover:text-green-400 active:text-green-400 focus:outline-none cursor-pointer"
-    onclick="navigate('projects', {{ $mobile }})"
     id="projectsLink"
+    class="nav-item py-3 @if($mobile) w-3/4 text-center mobile-nav @endif text-xl text-white hover:text-green-400 active:text-green-400 focus:outline-none cursor-pointer"
 >
     Projects
 </div>
@@ -35,9 +32,8 @@
 @endif
 
 <div
-    class="py-3 @if($mobile) w-3/4 text-center @endif text-xl text-white hover:text-green-400 active:text-green-400 focus:outline-none cursor-pointer"
-    onclick="navigate('contact', {{ $mobile }})"
     id="contactLink"
+    class="nav-item py-3 @if($mobile) w-3/4 text-center mobile-nav @endif text-xl text-white hover:text-green-400 active:text-green-400 focus:outline-none cursor-pointer"
 >
     Contact
 </div>

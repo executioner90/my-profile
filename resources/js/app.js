@@ -1,3 +1,3 @@
 import './bootstrap';
 import './welcome/background.js';
-import './welcome/navItems.js';
+import './welcome/navigation.js';

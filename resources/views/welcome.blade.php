@@ -24,8 +24,8 @@
                     <span class="slogan">Crafting Code, Building Dreams: Your Vision, Our Expertise!</span>
                 </div>
 
-                <div class="cursor-pointer" onclick="navigate('about', false)">
-                    <div class="bg-transparent button hover:text-white py-2 px-4 border rounded hover:show-down">
+                <div class="cursor-pointer">
+                    <div id="mainNav" class="bg-transparent button hover:text-white py-2 px-4 border rounded hover:show-down nav-item">
                         View my work
                         <i class="fa fa-arrow-right text-base pl-2"></i>
                         <i class="fa fa-arrow-down text-base pl-2"></i>
@@ -169,34 +169,3 @@
         </div>
     </body>
 </html>
-
-<script>
-    const toggleBtn = document.getElementById('toggle-btn');
-    const menuIcon = document.getElementById('menu-icon');
-    const navbarLinks = document.getElementById('navbar-links');
-    const menuClose =  document.getElementById('close-icon');
-
-    toggleBtn.addEventListener('click', () => {
-        this.toggleMenuButton();
-        this.toggleMenu();
-    });
-
-
-    function navigate(section, mobile = true) {
-        if (mobile) {
-            this.toggleMenuButton();
-            this.toggleMenu();
-        }
-
-        document.getElementById(section).scrollIntoView()
-    }
-
-    function toggleMenuButton() {
-        menuIcon.classList.toggle('hidden');
-        menuClose.classList.toggle('hidden');
-    }
-
-    function toggleMenu() {
-        navbarLinks.classList.toggle('hidden');
-    }
-</script>
