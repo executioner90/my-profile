@@ -119,3 +119,25 @@ body {
 }
 /* About page */
 
+/* Mobile nav animation */
+@keyframes collapse {
+    0% {
+        max-height: 0;
+        opacity: 0;
+    }
+    100% {
+        max-height: 12.5rem; /* Adjust this value according to your needs */
+        opacity: 1;
+    }
+}
+
+#navbar-links {
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+#navbar-links:not(.hidden) {
+    animation: collapse 0.3s forwards;
+}
+/* Mobile nav animation */
