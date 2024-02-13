@@ -74,7 +74,7 @@ body {
 /* Navbar */
 .nav-item-focused {
     color: #fe7833 !important;
-    transition: color 0.2s ease-in !important;
+    transition: color 0.5s ease-in !important;
 }
 
 .navbar {
