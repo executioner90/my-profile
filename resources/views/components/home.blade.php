@@ -1,4 +1,4 @@
-<div id="home">
+<div id="home" class="section">
     <canvas id="myCanvas"></canvas>
     <div class="flex flex-col min-h-screen justify-center items-center text-center">
         <div class="text-white text-lg md:text-4xl mb-5">

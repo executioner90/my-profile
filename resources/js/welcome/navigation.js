@@ -8,11 +8,11 @@ let lastClickedSection = null;
 // Focus on nav items when user scrolling manually.
 window.addEventListener("scroll", function() {
     let scrollPosition = window.scrollY;
-    let parentDivs = document.querySelectorAll("body > div");
+    let sections = document.querySelectorAll(".section");
     let id = '';
 
-    for (let i = 0; i < parentDivs.length; i++) {
-        let div = parentDivs[i];
+    for (let i = 0; i < sections.length; i++) {
+        let div = sections[i];
         let offsetTop = div.offsetTop - 350;
         let offsetBottom = offsetTop + div.offsetHeight;
 
