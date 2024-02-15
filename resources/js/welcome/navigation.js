@@ -33,7 +33,10 @@ window.addEventListener("scroll", function() {
         }
     }
 
-    focused(document.getElementById(id));
+    if(!isDesktopNavHidden()){
+        focused(document.getElementById(id));
+    }
+
 
     // Check if the last clicked section is currently not in view
     if (lastClickedSection && !isElementInViewport(document.getElementById(lastClickedSection))) {
@@ -128,4 +131,11 @@ function isElementInViewport(el) {
         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
+}
+
+function isDesktopNavHidden() {
+    const desktopNavElement = document.querySelector('.desktop-nav');
+    const computedStyle = window.getComputedStyle(desktopNavElement);
+
+    return computedStyle.display === 'none';
 }

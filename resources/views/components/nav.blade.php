@@ -1,7 +1,7 @@
 <nav class="bg-gray-950 top-0 sticky w-full mx-auto z-40">
     <div class="navbar">
         {{-- Desktop version --}}
-        <div class="hidden md:grid grid-cols-1">
+        <div class="hidden md:grid grid-cols-1 desktop-nav">
             <div class="flex justify-center gap-20 items-center">
                 <img src="{{ asset('/images/logo-white-removebg.png') }}" class="w-14 py-2" alt="Logo">
 
