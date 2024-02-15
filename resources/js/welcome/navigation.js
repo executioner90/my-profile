@@ -5,6 +5,14 @@ const navbarLinks = document.getElementById('navbar-links');
 const menuClose =  document.getElementById('close-icon');
 let lastClickedSection = null;
 
+window.addEventListener("scroll", function() {
+    // Check if the last clicked section is currently not in view
+    if (lastClickedSection && !isElementInViewport(document.getElementById(lastClickedSection))) {
+        // reset last clicked section
+        lastClickedSection = null;
+    }
+});
+
 // Click event on nav items.
 document.querySelectorAll('.nav-item').forEach(item => (
     item.addEventListener('click', (event) => {
@@ -56,7 +64,6 @@ function navigate(section, mobile = true) {
 }
 
 function focused(element) {
-    console.log(element);
     // Reset the styles of all navigation links
     document.querySelectorAll('.navbar div').forEach(link => {
         link.classList.remove(className);
@@ -64,7 +71,6 @@ function focused(element) {
 
     // Apply styles to the focused link
     if (element) {
-        console.log(element.id);
         element.classList.add(className);
     }
 }
@@ -78,3 +84,12 @@ function toggleMenu() {
     navbarLinks.classList.toggle('hidden');
 }
 
+function isElementInViewport(el) {
+    let rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}

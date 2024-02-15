@@ -7,11 +7,6 @@
 /* Imports */
 
 /* Custom styling */
-html {
-    scroll-behavior: smooth;
-    overflow: hidden;
-}
-
 body {
     /* Responsive font size */
     @screen sm {
