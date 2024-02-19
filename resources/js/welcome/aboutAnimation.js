@@ -1,7 +1,8 @@
 let animationTriggered = false;
 const elementsToAnimate = Array.from(document.querySelectorAll('#about .elements-to-animate'));
 
-document.getElementById('mainNav').addEventListener('click', () => {
+
+document.getElementById('aboutLink').addEventListener('click', () => {
     animateAboutSection();
 });
 

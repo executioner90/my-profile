@@ -17,6 +17,8 @@
         <div>
             <x-nav></x-nav>
 
+            <x-skills></x-skills>
+
             <x-projects></x-projects>
 
             <x-about></x-about>

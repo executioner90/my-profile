@@ -76,26 +76,41 @@ body {
     border-bottom: solid 0.25rem #80c44c;
 }
 
-/* Mobile nav animation */
-@keyframes collapse {
-    0% {
-        max-height: 0;
-        opacity: 0;
-    }
-    100% {
-        max-height: 12.5rem; /* Adjust this value according to your needs */
-        opacity: 1;
-    }
-}
-
 #navbar-links {
     max-height: 0;
     opacity: 0;
     transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
+/* Mobile nav animation */
+@keyframes collapse {
+    0% {
+        min-height: 0;
+        opacity: 0;
+    }
+
+    100% {
+        min-height: 15.8rem;
+        opacity: 1;
+    }
+}
+
+@keyframes navItemsCollapse {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 #navbar-links:not(.hidden) {
     animation: collapse 0.3s forwards;
+}
+
+#navbar-links .nav-item {
+    animation: navItemsCollapse 1.5s forwards;
 }
 /* Navbar */
 
