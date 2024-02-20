@@ -1,8 +1,12 @@
 <div id="about" class="min-h-screen w-screen px-10 section flex flex-col items-center justify-center bg-gray-200">
     <div class="image-container mb-6">
-        <div class="circle-overlay"></div>
-        <img class="rounded-full" src="{{ asset('/images/now-me.png') }}" alt="Me now">
+        <img class="rounded-full front-image" src="{{ asset('/images/now-me.png') }}" alt="Me now">
+
+        <a href="{{ asset('/pdf/mohammad-aldaas-english.pdf') }}" target="_blank">
+            <img class="rounded-full back-image" src="{{ asset('/images/logo-dark-removebg.png') }}" alt="Click on logo to open CV">
+        </a>
     </div>
+
 
     <div class="grid grid-cols-4 gap-20 w-full justify-center">
         <div class="about-me-card py-6 px-3 flex items-center justify-center text-center rounded-3xl">

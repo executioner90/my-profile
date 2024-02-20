@@ -11,7 +11,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
 body {
     /* Responsive font size */
     @screen sm {
@@ -27,16 +26,15 @@ body {
         font-size: 1.4rem;
     }
 }
+/* Custom styling */
 
-/* Home page background */
+/* Home page */
 #myCanvas {
     background-color: rgb(34, 34, 34);
     position: absolute;
     z-index: -1;
 }
-/* Home page background */
 
-/* View my work button */
 .button {
     color: #fe7833;
     border-color: #fe7833;
@@ -61,7 +59,6 @@ body {
 .hover\:show-down {
     transition: all 0.5s ease-out;
 }
-/* View my work button */
 
 .highlight {
     color: #fe7833;
@@ -71,7 +68,9 @@ body {
     font-family: "Curlz MT", serif;
     font-size: 1.2rem;
 }
+/* Home page */
 
+/* Navbar */
 .nav-item-focused {
     color: #fe7833 !important;
     transition: color 0.2s ease-in !important;
@@ -80,39 +79,6 @@ body {
 .navbar {
     border-bottom: solid 0.20rem #80c44c;
 }
-
-/* About page */
-.about-me-special-card{
-    background-color: #fe7833;
-    color: #ebebe9;
-
-}
-
-.about-me-card{
-    background-color: #35383d;
-    color: #ebebe9;
-}
-
-.image-container {
-    position: absolute;
-    overflow: hidden;
-    margin-top: 3rem;
-}
-
-.image-container img {
-    width: 18rem;
-    height: 18rem;
-}
-
-.circle-overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 5px solid #80c44c;
-    border-radius: 50%;
-    box-sizing: border-box;
-}
-/* About page */
 
 /* Mobile nav animation */
 @keyframes collapse {
@@ -135,4 +101,47 @@ body {
 #navbar-links:not(.hidden) {
     animation: collapse 0.3s forwards;
 }
-/* Mobile nav animation */
+/* Navbar */
+
+/* About page */
+.about-me-special-card{
+    background-color: #fe7833;
+    color: #ebebe9;
+
+}
+
+.about-me-card{
+    background-color: #35383d;
+    color: #ebebe9;
+}
+
+.image-container {
+    position: absolute;
+    overflow: hidden;
+    width: 20rem;
+    height: 20rem;
+    margin: auto;
+    perspective: 100rem;
+}
+
+.image-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.image-container .back-image {
+    transform: rotateY(180deg);
+}
+
+.image-container:hover .front-image {
+    transform: rotateY(180deg);
+}
+
+.image-container:hover .back-image {
+    transform: rotateY(0deg);
+}
+/* About page */
