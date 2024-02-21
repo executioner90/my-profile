@@ -62,6 +62,7 @@ document.querySelectorAll('.nav-item').forEach(item => (
                 navigate('home', mobile);
                 break;
             case 'aboutLink' :
+            case 'reference' :
                 navigate('about', mobile);
                 break;
             case 'projectsLink' :
