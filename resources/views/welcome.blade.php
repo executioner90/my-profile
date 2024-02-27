@@ -17,9 +17,9 @@
         <div>
             <x-nav></x-nav>
 
-            <x-about></x-about>
-
             <x-projects></x-projects>
+
+            <x-about></x-about>
 
             <x-contact></x-contact>
         </div>

@@ -10,10 +10,10 @@
 @endif
 
 <div
-    id="aboutLink"
+    id="projectsLink"
     class="nav-item py-3 @if($mobile) w-3/4 text-center mobile-nav @endif text-xl text-white hover:text-orange-500 cursor-pointer"
 >
-    About
+    Projects
 </div>
 
 @if($mobile)
@@ -21,10 +21,10 @@
 @endif
 
 <div
-    id="projectsLink"
+    id="aboutLink"
     class="nav-item py-3 @if($mobile) w-3/4 text-center mobile-nav @endif text-xl text-white hover:text-orange-500 cursor-pointer"
 >
-    Projects
+    About
 </div>
 
 @if($mobile)
