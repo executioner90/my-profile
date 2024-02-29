@@ -1,10 +1,10 @@
 <div id="about" class="min-h-screen w-screen p-10 section flex flex-col items-center justify-center bg-gray-200">
     {{-- Desktop version --}}
     <div class="image-container mb-6 hidden md:block">
-        <img class="rounded-full front-image" src="{{ asset('/images/now-me.png') }}" alt="Me now">
+        <img class="rounded-full front-image" src="{{ asset('/images/about/now-me.png') }}" alt="Me now">
 
         <a href="{{ asset('/pdf/mohammad-aldaas-english.pdf') }}" target="_blank">
-            <img class="rounded-full back-image" src="{{ asset('/images/logo-dark-removebg.png') }}"
+            <img class="rounded-full back-image" src="{{ asset('/images/logo/logo-dark-removebg.png') }}"
                  alt="Click on logo to open CV">
         </a>
     </div>
@@ -90,7 +90,7 @@
 
             <div class="py-3 px-3 flex items-center justify-center text-center rounded-3xl elements-to-animate show-1">
                 <div class="w-2/6">
-                    <img src="{{ asset('/images/young-me.png') }}" alt="Young me">
+                    <img src="{{ asset('/images/about/young-me.png') }}" alt="Young me">
                 </div>
             </div>
         </div>
