@@ -9,6 +9,7 @@
 /* Custom styling */
 html {
     scroll-behavior: smooth;
+    overflow: hidden;
 }
 
 body {
@@ -73,11 +74,11 @@ body {
 /* Navbar */
 .nav-item-focused {
     color: #fe7833 !important;
-    transition: color 0.2s ease-in !important;
+    transition: color 0.5s ease-in !important;
 }
 
 .navbar {
-    border-bottom: solid 0.20rem #80c44c;
+    border-bottom: solid 0.25rem #80c44c;
 }
 
 /* Mobile nav animation */
