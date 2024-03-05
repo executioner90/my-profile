@@ -8,7 +8,7 @@
     </div>
 
 
-    <div class="grid grid-cols-4 gap-20 w-full justify-center">
+    <div class="grid grid-cols-4 gap-20 mt-14 mb-7 w-full justify-center">
         <div class="about-me-card elements-to-animate show-8 py-6 px-3 flex items-center justify-center text-center rounded-3xl">
             Last station The Netherlands
         </div>
@@ -26,7 +26,7 @@
         </div>
     </div>
 
-    <div class="grid grid-cols-4 gap-20 my-6  w-full justify-center">
+    <div class="grid grid-cols-4 gap-20 my-8  w-full justify-center">
         <div class="about-me-card elements-to-animate show-9 py-6 px-3 flex items-center justify-center text-center rounded-3xl">
             Fulltime study and working simultaneously
         </div>
@@ -36,7 +36,7 @@
         </div>
     </div>
 
-    <div class="grid grid-cols-4 gap-20 my-6 w-full justify-center">
+    <div class="grid grid-cols-4 gap-20 my-8 w-full justify-center">
         <div class="about-me-card elements-to-animate show-10 py-6 px-3 flex items-center justify-center text-center rounded-3xl">
             High school certificates (English, maths, physics)
         </div>
@@ -46,7 +46,7 @@
         </div>
     </div>
 
-    <div class="grid grid-cols-4 gap-20 my-6 w-full justify-center">
+    <div class="grid grid-cols-4 gap-20 my-8 w-full justify-center">
         <div class="about-me-special-card elements-to-animate show-11 py-6 px-3 flex items-center justify-center text-center rounded-3xl">
             Diploma Software developer
         </div>
@@ -56,7 +56,7 @@
         </div>
     </div>
 
-    <div class="grid grid-cols-4 gap-20 mt-6  w-full justify-center">
+    <div class="grid grid-cols-4 gap-20 mt-8  w-full justify-center">
         <div class="about-me-card elements-to-animate show-12 py-6 px-3 flex items-center justify-center text-center rounded-3xl">
                     <span>
                         A software developer for <a class="hover:text-green-400" href="https://www.inktweb.nl">Inktweb.nl</a>
