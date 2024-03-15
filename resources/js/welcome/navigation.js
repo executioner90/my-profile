@@ -20,6 +20,9 @@ window.addEventListener("scroll", function() {
                 case 'home':
                     id = 'homeLink';
                     break;
+                case 'skills':
+                    id = 'skillsLink';
+                    break;
                 case 'about':
                     id = 'aboutLink';
                     break;
@@ -33,10 +36,9 @@ window.addEventListener("scroll", function() {
         }
     }
 
-    if(!isDesktopNavHidden()){
+    if (!isDesktopNavHidden()) {
         focused(document.getElementById(id));
     }
-
 
     // Check if the last clicked section is currently not in view
     if (lastClickedSection && !isElementInViewport(document.getElementById(lastClickedSection))) {
@@ -53,14 +55,14 @@ document.querySelectorAll('.nav-item').forEach(item => (
 
         switch (navItem.id) {
             case 'mainNav' :
-            case 'aboutLink':
-                navigate('about', mobile);
+            case 'skillsLink':
+                navigate('skills', mobile);
                 break;
             case 'homeLink' :
                 navigate('home', mobile);
                 break;
-            case 'skillsLink' :
-                navigate('skills', mobile);
+            case 'aboutLink' :
+                navigate('about', mobile);
                 break;
             case 'projectsLink' :
                 navigate('projects', mobile);
@@ -121,6 +123,7 @@ function toggleMenuButton() {
 
 function toggleMenu() {
     navbarLinks.classList.toggle('hidden');
+    navbarLinks.classList.toggle('closed');
 }
 
 function isElementInViewport(el) {
