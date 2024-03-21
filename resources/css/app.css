@@ -176,7 +176,7 @@ body {
 .carousel-content {
     display: flex;
     flex-direction: row;
-
+    justify-content: center;
 }
 
 .carousel-item {

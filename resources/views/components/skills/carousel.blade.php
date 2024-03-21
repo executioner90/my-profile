@@ -1,18 +1,19 @@
-<div class="w-3/4 mx-auto p-8 md:text-lg flex justify-center relative bg-white shadow-xl">
+<div class="w-full mx-auto p-8 md:text-lg hidden md:flex justify-center relative bg-white shadow-xl">
+
     <button
         id="slide-arrow-prev"
         class="absolute left-5 top-1/2 transform -translate-y-1/2 slide-arrow hover:bg-orange-600">
         &#8249;
     </button>
 
-    <div class="w-3/4">
+    <div class="w-11/12">
         <div class="carousel">
             <div class="carousel-inner">
                 <div class="w-full carousel-item px-5">
                     <div class="carousel-content">
-                        <div class="mr-7 w-1/3">
+                        <div class="mr-10 w-1/4">
                             <div class="flex justify-center mb-2">
-                                <img class="w-36 h-20" src="{{ asset('/images/skills/web-development.jpg') }}"
+                                <img class="w-36 h-20" src="{{ asset('/images/skills/web-development.png') }}"
                                      alt="Web Development">
                             </div>
 
@@ -25,7 +26,7 @@
                             </div>
                         </div>
 
-                        <div class="mr-7 w-1/3">
+                        <div class="mx-10 w-1/4">
                             <div class="flex justify-center mb-2">
                                 <img class="w-36 h-20" src="{{ asset('/images/skills/fullstack.jpg')}}" alt="Fullstack">
                             </div>
@@ -39,9 +40,10 @@
                             </div>
                         </div>
 
-                        <div class="ml-7 w-1/3">
+                        <div class="mx-10 w-1/4">
                             <div class="flex justify-center mb-2">
-                                <img class="w-36 h-20" src="{{ asset('/images/skills/debugging.png')}}" alt="Debug skills">
+                                <img class="w-36 h-20" src="{{ asset('/images/skills/debugging.png')}}"
+                                     alt="Debug skills">
                             </div>
 
                             <div class="text-center text-orange-600 mb-2">
@@ -52,12 +54,8 @@
                                 detecting and removing of existing errors.
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="w-full carousel-item px-5">
-                    <div class="carousel-content">
-                        <div class="mr-7 w-1/3">
+                        <div class="mx-10 w-1/4">
                             <div class="flex justify-center mb-2">
                                 <img class="w-36 h-20" src="{{ asset('/images/skills/review.jpg') }}" alt="Reviewer">
                             </div>
@@ -70,10 +68,14 @@
                                 Masterful reviews that speak louder than words.
                             </div>
                         </div>
+                    </div>
+                </div>
 
-                        <div class="mr-7 w-1/3">
+                <div class="w-full carousel-item px-5">
+                    <div class="carousel-content">
+                        <div class="mr-10 w-1/4">
                             <div class="flex justify-center mb-2">
-                                <img class="w-36 h-20" src="{{ asset('/images/skills/creative-thinker.jpeg') }}"
+                                <img class="w-36 h-20" src="{{ asset('/images/skills/creative.png') }}"
                                      alt="Creative">
                             </div>
 
@@ -86,7 +88,7 @@
                             </div>
                         </div>
 
-                        <div class="mr-7 w-1/3">
+                        <div class="mx-10 w-1/4">
                             <div class="flex justify-center mb-2">
                                 <img class="w-36 h-20" src="{{ asset('/images/skills/teamwork.jpg') }}" alt="Teamwork">
                             </div>
@@ -99,12 +101,8 @@
                                 Team player extraordinaire: I turn collaboration into success!
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="w-full carousel-item px-5">
-                    <div class="carousel-content">
-                        <div class="mr-7 w-1/3">
+                        <div class="mx-10 w-1/4">
                             <div class="flex justify-center mb-2">
                                 <img class="w-36 h-20" src="{{ asset('/images/skills/flexible.png') }}" alt="Flexible">
                             </div>
@@ -118,7 +116,7 @@
                             </div>
                         </div>
 
-                        <div class="mr-7 w-1/3">
+                        <div class="mx-10 w-1/4">
                             <div class="flex justify-center mb-2">
                                 <img class="w-36 h-20" src="{{ asset('/images/skills/dedication.jpg') }}"
                                      alt="Dedication and commitment">
@@ -132,10 +130,15 @@
                                 Unwavering dedication, unwavering commitment.
                             </div>
                         </div>
+                    </div>
+                </div>
 
-                        <div class="mr-7 w-1/3">
+                <div class="w-full carousel-item px-5">
+                    <div class="carousel-content">
+                        <div class="mr-10 w-1/3">
                             <div class="flex justify-center mb-2">
-                                <img class="w-36 h-20" src="{{ asset('/images/skills/pressure.jpg') }}" alt="Resilience">
+                                <img class="w-36 h-20" src="{{ asset('/images/skills/pressure.jpg') }}"
+                                     alt="Resilience">
                             </div>
 
                             <div class="text-center text-orange-600 mb-2">
@@ -146,12 +149,8 @@
                                 Work under pressure and optimize the current situation.
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="w-full carousel-item px-5">
-                    <div class="carousel-content">
-                        <div class="mr-7 w-1/2">
+                        <div class="mx-10 w-1/3">
                             <div class="flex justify-center mb-2">
                                 <img class="w-36 h-20" src="{{ asset('/images/skills/ambition.jpeg') }}" alt="Ambition">
                             </div>
@@ -165,7 +164,7 @@
                             </div>
                         </div>
 
-                        <div class="ml-7 w-1/2">
+                        <div class="ml-10 w-1/3">
                             <div class="flex justify-center mb-2">
                                 <img class="w-36 h-20" src="{{ asset('/images/skills/how.png') }}" alt="Wondering how!">
                             </div>
@@ -175,7 +174,9 @@
                             </div>
 
                             <div class="text-center">
-                                <span id="reference" class="nav-item cursor-pointer">click here</span> to view my bio detailing my journey
+                                <span id="reference" class="nav-item cursor-pointer">click here</span> to view my bio
+                                detailing my
+                                journey
                                 and skill acquisition.
                             </div>
                         </div>
