@@ -2,8 +2,15 @@
     <x-skills.carousel></x-skills.carousel>
 
     <div class="grid grid-cols-2 gap-x20">
-        <div>
-            {{-- Here logo and some text about me --}}
+        <div class="mt-5">
+            <div class="grid grid-rows-2">
+                <div>
+                    <img class="w-1/3" src="{{ asset('/images/logo/logo-dark-removebg.png') }}" alt="Logo">
+                </div>
+                <div>
+                    {{-- Add text --}}
+                </div>
+            </div>
         </div>
 
         <x-skills.bars :data="$skills"></x-skills.bars>
