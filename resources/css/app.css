@@ -112,6 +112,11 @@ body {
 #navbar-links .nav-item {
     animation: navItemsCollapse 1.5s forwards;
 }
+
+#reference:hover, #contactMe:hover {
+    color: #80c44c;
+    text-decoration: underline;
+}
 /* Navbar */
 
 /* About page */
@@ -192,10 +197,5 @@ body {
     border: none;
     border-radius: 50%;
     cursor: pointer;
-}
-
-#reference:hover {
-    color: #80c44c;
-    text-decoration: underline;
 }
 /* Skills page */

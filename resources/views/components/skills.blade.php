@@ -14,7 +14,10 @@
                     </div>
 
                     <div class="flex justify-center text-center font-thin px-16">
-                        What you've seen is just the beginning. I love learning, embracing challenges, and ensuring success. Curious to know more? Let's chat.                    </div>
+                        <div>
+                            What you've seen is just the beginning. I love learning, embracing challenges, and ensuring success. Curious to know more? <span id="contactMe" class="nav-item cursor-pointer">Let's chat!</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
