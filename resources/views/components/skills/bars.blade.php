@@ -1,4 +1,4 @@
-<div class="grid grid-cols-3 gap-y-6 gap-x-20 mt-5">
+<div class="grid grid-cols-3 gap-x-10">
     @foreach($test as $language => $progress)
         <div>
             <h2 class="text-lg font-semibold">{{ $language }}</h2>
