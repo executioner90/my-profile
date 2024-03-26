@@ -149,5 +149,20 @@
                 Unbounded ambitions fueled by relentless effort.
             </div>
         </div>
+
+        <div
+            class="gird grid-rows-3 gap-4">
+            <div class="w-16">
+                <img src="" alt="Wondering how!">
+            </div>
+
+            <div>
+                Wondering how!
+            </div>
+
+            <div>
+                To show my biography illustrating my journey and the acquisition of my skills, kindly <span id="reference" class="nav-item">click here</span>.
+            </div>
+        </div>
     </div>
 </div>

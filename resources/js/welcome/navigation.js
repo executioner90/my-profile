@@ -62,6 +62,7 @@ document.querySelectorAll('.nav-item').forEach(item => (
                 navigate('home', mobile);
                 break;
             case 'aboutLink' :
+            case 'reference' :
                 navigate('about', mobile);
                 break;
             case 'projectsLink' :
@@ -72,8 +73,12 @@ document.querySelectorAll('.nav-item').forEach(item => (
                 break;
         }
 
+        if (navItem.id === 'reference') {
+            return;
+        }
+
         if (navItem.id === 'mainNav') {
-            focused(document.getElementById('aboutLink'));
+            focused(document.getElementById('skillsLink'));
         } else {
             focused(navItem);
         }
