@@ -1,9 +1,9 @@
-<div id="skills" class="min-h-screen w-screen bg-violet-700 section">
+<div id="skills" class="min-h-screen w-screen section">
     <div class="grid grid-cols-10 gap-8 my-10 mx-5 w-full justify-center">
         <div
             class="gird grid-rows-3 gap-4">
-            <div class="w-16">
-                <img src="" alt="Web Development">
+            <div class="w-36">
+                <img src="{{ asset('/images/web-development.jpg') }}" alt="Web Development">
             </div>
 
             <div>
@@ -17,8 +17,8 @@
 
         <div
             class="gird grid-rows-3 gap-4">
-            <div class="w-16">
-                <img src="" alt="Fullstack">
+            <div class="w-36">
+                <img src="{{ asset('/images/fullstack.jpg')}}" alt="Fullstack">
             </div>
 
             <div>
@@ -32,8 +32,8 @@
 
         <div
             class="gird grid-rows-3 gap-4">
-            <div class="w-16">
-                <img src="" alt="Debug skills">
+            <div class="w-36">
+                <img src="{{ asset('/images/debugging.png')}}" alt="Debug skills">
             </div>
 
             <div>
@@ -47,8 +47,8 @@
 
         <div
             class="gird grid-rows-3 gap-4">
-            <div class="w-16">
-                <img src="" alt="Reviewer">
+            <div class="w-36">
+                <img src="{{ asset('/images/review.jpg') }}" alt="Reviewer">
             </div>
 
             <div>
@@ -62,8 +62,8 @@
 
         <div
             class="gird grid-rows-3 gap-4">
-            <div class="w-16">
-                <img src="" alt="Creative">
+            <div class="w-36">
+                <img src="{{ asset('/images/creative-thinker.jpeg') }}" alt="Creative">
             </div>
 
             <div>
@@ -77,8 +77,8 @@
 
         <div
             class="gird grid-rows-3 gap-4">
-            <div class="w-16">
-                <img src="" alt="Teamwork">
+            <div class="w-36">
+                <img src="{{ asset('/images/teamwork.jpg') }}" alt="Teamwork">
             </div>
 
             <div>
@@ -92,8 +92,8 @@
 
         <div
             class="gird grid-rows-3 gap-4">
-            <div class="w-16">
-                <img src="" alt="Flexible">
+            <div class="w-36">
+                <img src="{{ asset('/images/flexible.png') }}" alt="Flexible">
             </div>
 
             <div>
@@ -107,8 +107,8 @@
 
         <div
             class="gird grid-rows-3 gap-4">
-            <div class="w-16">
-                <img src="" alt="Dedication and commitment">
+            <div class="w-36">
+                <img src="{{ asset('/images/dedication.jpg') }}" alt="Dedication and commitment">
             </div>
 
             <div>
@@ -122,8 +122,8 @@
 
         <div
             class="gird grid-rows-3 gap-4">
-            <div class="w-16">
-                <img src="" alt="Resilience">
+            <div class="w-36">
+                <img src="{{ asset('/images/pressure.jpg') }}" alt="Resilience">
             </div>
 
             <div>
@@ -137,8 +137,8 @@
 
         <div
             class="gird grid-rows-3 gap-4">
-            <div class="w-16">
-                <img src="" alt="Ambition">
+            <div class="w-36">
+                <img src="{{ asset('/images/ambition.jpeg') }}" alt="Ambition">
             </div>
 
             <div>
@@ -152,8 +152,8 @@
 
         <div
             class="gird grid-rows-3 gap-4">
-            <div class="w-16">
-                <img src="" alt="Wondering how!">
+            <div class="w-36">
+                <img src="{{ asset('/images/how.png') }}" alt="Wondering how!">
             </div>
 
             <div>
