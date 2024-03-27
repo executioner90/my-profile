@@ -2,7 +2,7 @@
     <x-skills.carousel></x-skills.carousel>
 
     <div class="grid grid-cols-2 px-20 mt-5">
-        <div>
+        <div id="text">
             <div class="grid grid-rows-2 gap-y-5">
                 <div class="flex justify-center">
                     <img class="w-1/3" src="{{ asset('/images/logo/logo-dark-removebg.png') }}" alt="Logo">
