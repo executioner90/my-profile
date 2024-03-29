@@ -8,12 +8,11 @@ use Illuminate\View\Component;
 
 class About extends Component
 {
-    /**
-     * Create a new component instance.
-     */
-    public function __construct()
+    public array $skills;
+
+    public function __construct(array $data)
     {
-        //
+        $this->skills = $data;
     }
 
     /**

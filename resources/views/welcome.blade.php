@@ -17,9 +17,9 @@
         <div>
             <x-nav></x-nav>
 
-            <x-skills :data="$data"></x-skills>
+            <x-about :data="$data"></x-about>
 
-            <x-about></x-about>
+            <x-more></x-more>
 
             <x-contact></x-contact>
         </div>
