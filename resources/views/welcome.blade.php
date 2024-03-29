@@ -19,8 +19,6 @@
 
             <x-skills :data="$data"></x-skills>
 
-            <x-projects></x-projects>
-
             <x-about></x-about>
 
             <x-contact></x-contact>

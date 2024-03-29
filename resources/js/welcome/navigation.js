@@ -26,9 +26,6 @@ window.addEventListener("scroll", function() {
                 case 'about':
                     id = 'aboutLink';
                     break;
-                case 'projects':
-                    id = 'projectsLink';
-                    break;
                 case 'contact':
                     id = 'contactLink';
                     break;
@@ -64,9 +61,6 @@ document.querySelectorAll('.nav-item').forEach(item => (
             case 'aboutLink' :
             case 'reference' :
                 navigate('about', mobile);
-                break;
-            case 'projectsLink' :
-                navigate('projects', mobile);
                 break;
             case 'contactLink' :
             case 'contactMe' :

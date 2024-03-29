@@ -21,17 +21,6 @@
 @endif
 
 <div
-    id="projectsLink"
-    class="nav-item py-3 @if($mobile) w-3/4 text-center mobile-nav @endif text-xl text-white hover:text-orange-500 cursor-pointer"
->
-    Projects
-</div>
-
-@if($mobile)
-    <hr class="w-3/4">
-@endif
-
-<div
     id="aboutLink"
     class="nav-item py-3 @if($mobile) w-3/4 text-center mobile-nav @endif text-xl text-white hover:text-orange-500 cursor-pointer"
 >
