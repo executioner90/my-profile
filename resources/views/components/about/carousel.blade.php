@@ -13,7 +13,7 @@
                     <div class="carousel-content">
                         <div class="mr-10 w-1/4">
                             <div class="flex justify-center mb-2">
-                                <img class="w-36 h-20" src="{{ asset('/images/skills/web-development.png') }}"
+                                <img class="w-36 h-20" src="{{ asset('/images/about/web-development.png') }}"
                                      alt="Web Development">
                             </div>
 
@@ -28,7 +28,7 @@
 
                         <div class="mx-10 w-1/4">
                             <div class="flex justify-center mb-2">
-                                <img class="w-36 h-20" src="{{ asset('/images/skills/fullstack.jpg')}}" alt="Fullstack">
+                                <img class="w-36 h-20" src="{{ asset('/images/about/fullstack.jpg')}}" alt="Fullstack">
                             </div>
 
                             <div class="text-center text-orange-600 mb-2">
@@ -42,7 +42,7 @@
 
                         <div class="mx-10 w-1/4">
                             <div class="flex justify-center mb-2">
-                                <img class="w-36 h-20" src="{{ asset('/images/skills/debugging.png')}}"
+                                <img class="w-36 h-20" src="{{ asset('/images/about/debugging.png')}}"
                                      alt="Debug skills">
                             </div>
 
@@ -57,7 +57,7 @@
 
                         <div class="mx-10 w-1/4">
                             <div class="flex justify-center mb-2">
-                                <img class="w-36 h-20" src="{{ asset('/images/skills/review.jpg') }}" alt="Reviewer">
+                                <img class="w-36 h-20" src="{{ asset('/images/about/review.jpg') }}" alt="Reviewer">
                             </div>
 
                             <div class="text-center text-orange-600 mb-2">
@@ -75,7 +75,7 @@
                     <div class="carousel-content">
                         <div class="mr-10 w-1/4">
                             <div class="flex justify-center mb-2">
-                                <img class="w-36 h-20" src="{{ asset('/images/skills/creative.png') }}"
+                                <img class="w-36 h-20" src="{{ asset('/images/about/creative.png') }}"
                                      alt="Creative">
                             </div>
 
@@ -90,7 +90,7 @@
 
                         <div class="mx-10 w-1/4">
                             <div class="flex justify-center mb-2">
-                                <img class="w-36 h-20" src="{{ asset('/images/skills/teamwork.jpg') }}" alt="Teamwork">
+                                <img class="w-36 h-20" src="{{ asset('/images/about/teamwork.jpg') }}" alt="Teamwork">
                             </div>
 
                             <div class="text-center text-orange-600 mb-2">
@@ -104,7 +104,7 @@
 
                         <div class="mx-10 w-1/4">
                             <div class="flex justify-center mb-2">
-                                <img class="w-36 h-20" src="{{ asset('/images/skills/flexible.png') }}" alt="Flexible">
+                                <img class="w-36 h-20" src="{{ asset('/images/about/flexible.png') }}" alt="Flexible">
                             </div>
 
                             <div class="text-center text-orange-600 mb-2">
@@ -118,7 +118,7 @@
 
                         <div class="mx-10 w-1/4">
                             <div class="flex justify-center mb-2">
-                                <img class="w-36 h-20" src="{{ asset('/images/skills/dedication.jpg') }}"
+                                <img class="w-36 h-20" src="{{ asset('/images/about/dedication.jpg') }}"
                                      alt="Dedication and commitment">
                             </div>
 
@@ -137,7 +137,7 @@
                     <div class="carousel-content">
                         <div class="mr-10 w-1/3">
                             <div class="flex justify-center mb-2">
-                                <img class="w-36 h-20" src="{{ asset('/images/skills/pressure.jpg') }}"
+                                <img class="w-36 h-20" src="{{ asset('/images/about/pressure.jpg') }}"
                                      alt="Resilience">
                             </div>
 
@@ -152,7 +152,7 @@
 
                         <div class="mx-10 w-1/3">
                             <div class="flex justify-center mb-2">
-                                <img class="w-36 h-20" src="{{ asset('/images/skills/ambition.jpeg') }}" alt="Ambition">
+                                <img class="w-36 h-20" src="{{ asset('/images/about/ambition.jpeg') }}" alt="Ambition">
                             </div>
 
                             <div class="text-center text-orange-600 mb-2">
@@ -166,7 +166,7 @@
 
                         <div class="ml-10 w-1/3">
                             <div class="flex justify-center mb-2">
-                                <img class="w-36 h-20" src="{{ asset('/images/skills/how.png') }}" alt="Wondering how!">
+                                <img class="w-36 h-20" src="{{ asset('/images/about/how.png') }}" alt="Wondering how!">
                             </div>
 
                             <div class="text-center text-orange-600 mb-2">
