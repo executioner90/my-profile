@@ -160,5 +160,42 @@ body {
     transform: translate(0, 0);
     transition: opacity 0.5s, transform 0.5s;
 }
-
 /* About page */
+
+/* Skills page */
+.carousel {
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.8s ease;
+}
+
+.carousel-content {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+}
+
+.slide-arrow {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.slide-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+/* Skills page */
