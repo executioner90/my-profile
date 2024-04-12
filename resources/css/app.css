@@ -170,7 +170,7 @@ body {
 
 .carousel-inner {
     display: flex;
-    transition: transform 0.8s ease;
+    transition: transform 0.7s ease;
 }
 
 .carousel-content {
@@ -197,5 +197,10 @@ body {
 
 .slide-arrow:hover {
     background-color: rgba(0, 0, 0, 0.7);
+}
+
+#reference:hover {
+    color: #80c44c;
+    text-decoration: underline;
 }
 /* Skills page */
