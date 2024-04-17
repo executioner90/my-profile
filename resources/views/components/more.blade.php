@@ -131,7 +131,7 @@
         </div>
         <div class="about-me-card py-6 px-3 my-2 text-center">
             <span>
-                A software developer for <a class="hover:text-green-400" href="https://www.inktweb.nl">Inktweb.nl</a>
+                A software developer for <a class="hover:text-green-400" href="https://www.inktweb.nl" target="_blank">Inktweb.nl</a>
             </span>
         </div>
         <div class="about-me-special-card show-13 py-6 px-6 my-2 text-center">

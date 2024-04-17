@@ -5,3 +5,5 @@ import './welcome/more/animation.js';
 import './welcome/about/carousal.js';
 import './welcome/about/animation/text.js';
 import './welcome/about/animation/bars.js';
+import './welcome/footer.js';
+import './welcome/form.js';

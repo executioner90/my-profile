@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Welcome;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,21 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    $data = [
-        'HTML' => '90',
-        'Laravel' => '85',
-        'PHP' => '85',
-        'MYSQL' => '80',
-        'JavaScript' => '75',
-        'JQuery' => '75',
-        'CSS' => '70',
-        'Vue.js' => '70',
-        'Node.js' => '40',
-        'ASP.NET' => '35',
-        'xamarin' => '35',
-        'WordPress' => '20',
-    ];
-
-    return view('welcome', compact('data'));
-});
+Route::get('/', [Welcome::class, 'index'])
+    ->name('welcome');
