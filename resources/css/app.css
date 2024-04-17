@@ -12,6 +12,9 @@
     --secondary-color: #80c44c;
 }
 
+footer {
+    background-color: var(--primary-bg-color);
+}
 /* Custom styling */
 body {
     /* Responsive font size */

@@ -1,6 +1,6 @@
 <div id="contact" class="min-h-screen w-screen section flex flex-col justify-center">
     <div class="flex flex-col items-center">
-        <div class="w-1/3 border-x-4 border-green-500 px-10">
+        <div class="w-1/3">
             <form id="form" novalidate class="flex flex-col">
                 <div class="mb-1">
                     <input id="name" placeholder="Name" type="text" name="name" class="w-full pt-1 pl-1" required>
@@ -45,3 +45,6 @@
         </div>
     </div>
 </div>
+<footer class="primary-bg">
+    <span class="text-white text-sm"> <i class="fa fa-copyright"></i> Copyright 2024 - powered by Mohammad Aldaas</span>
+</footer>
