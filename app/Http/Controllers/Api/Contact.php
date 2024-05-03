@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers\Api;
 
+use App\Mail\ContactMail;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class Contact
 {
@@ -15,8 +17,15 @@ class Contact
             'message' => 'required|string|min:10',
         ]);
 
-        return response()->json(
-            ['success' => true,]
-        );
+        Mail::to('executioneraldaas@gmail.com')
+            ->send(
+                new ContactMail(
+                    $request->input('message'),
+                    $request->input('name'),
+                    $request->input('email')
+                )
+            );
+
+        return response()->json(['success' => true,]);
     }
 }
