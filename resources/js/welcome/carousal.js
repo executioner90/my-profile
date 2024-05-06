@@ -3,10 +3,19 @@ const nextButton = document.getElementById('slide-arrow-next');
 const carouselInner = document.querySelector('.carousel-inner');
 const carouselItems = document.querySelectorAll('.carousel-item');
 let currentIndex = 0;
-const itemWidth = carouselItems[0].offsetWidth + parseInt(window.getComputedStyle(carouselItems[0]).marginRight);
+let itemWidth;
+
+// Function to update itemWidth based on current window size
+function updateItemWidth() {
+    itemWidth = carouselItems[0].offsetWidth + parseInt(window.getComputedStyle(carouselItems[0]).marginRight);
+    carouselInner.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+}
 
 // Set initial position
-carouselInner.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+updateItemWidth();
+
+// Update itemWidth when window resizes
+window.addEventListener('resize', updateItemWidth);
 
 function showNextSlide() {
     if (currentIndex < carouselItems.length - 1) {
