@@ -17,7 +17,7 @@
         <div>
             <x-nav></x-nav>
 
-            <x-skills></x-skills>
+            <x-skills :data="$data"></x-skills>
 
             <x-projects></x-projects>
 
