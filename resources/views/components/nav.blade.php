@@ -3,7 +3,7 @@
         {{-- Desktop version --}}
         <div class="hidden md:grid grid-cols-1 desktop-nav">
             <div class="flex justify-center gap-20 items-center">
-                <img src="{{ asset('/images/logo/logo-white-removebg.png') }}" class="w-14 py-2" alt="Logo">
+                <img src="{{ asset('/images/logo/logo-white-removebg.png') }}" class="w-14 py-2" alt="{{ Lang::get('Logo') }}">
 
                 <x-nav.items></x-nav.items>
             </div>
@@ -11,7 +11,7 @@
 
         {{-- Mobile version --}}
         <div class="grid grid-cols-2 justify-items-center md:hidden">
-            <img src="{{ asset('/images/logo/logo-white-removebg.png') }}" class="w-14 py-2" alt="Logo">
+            <img src="{{ asset('/images/logo/logo-white-removebg.png') }}" class="w-14 py-2" alt="{{ Lang::get('Logo') }}">
 
             <div class="grid justify-end">
                 <button id="toggle-mobile-nav-button" class="text-white hover:text-green-400 hover:animate-pulse">

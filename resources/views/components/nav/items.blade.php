@@ -2,7 +2,7 @@
     id="homeLink"
     class="nav-item @if($mobile) pb-3 w-3/4 text-center mobile-nav @else py-3 @endif text-xl text-white hover:text-orange-500 cursor-pointer"
 >
-    Home
+    @lang('Home')
 </div>
 
 @if($mobile)
@@ -13,7 +13,7 @@
     id="aboutLink"
     class="nav-item py-3 @if($mobile) w-3/4 text-center mobile-nav @endif text-xl text-white hover:text-orange-500 cursor-pointer"
 >
-    About
+    @lang('About')
 </div>
 
 @if($mobile)
@@ -24,7 +24,7 @@
     id="moreLink"
     class="nav-item py-3 @if($mobile) w-3/4 text-center mobile-nav @endif text-xl text-white hover:text-orange-500 cursor-pointer"
 >
-    More
+    @lang('More')
 </div>
 
 @if($mobile)
@@ -35,5 +35,5 @@
     id="contactLink"
     class="nav-item py-3 @if($mobile) w-3/4 text-center mobile-nav @endif text-xl text-white hover:text-orange-500 cursor-pointer"
 >
-    Contact
+    @lang('Contact')
 </div>

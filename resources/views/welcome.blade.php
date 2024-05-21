@@ -7,7 +7,7 @@
         <meta name="keywords" content="Profile, developer, Laravel, PHP, HTML, CSS, JavaScript">
         <meta name="Description" content="Discover more about top-notch full-stack developers. Enjoy the journey! ">
 
-        <title>Mohammad Aldaas - profile</title>
+        <title>@lang('Mohammad Aldaas - profile')</title>
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
 

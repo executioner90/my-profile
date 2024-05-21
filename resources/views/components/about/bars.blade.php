@@ -8,7 +8,7 @@
                     {{ $progress }}%
                 </span>
                     <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full bg-gray-200 text-gray-700">
-                    {{ $progress >= 50 ? 'Intermediate' : 'Beginner' }}
+                    {{ $progress >= 50 ? Lang::get('Intermediate') : Lang::get('Beginner') }}
                 </span>
                 </div>
                 <div class="overflow-hidden h-4 mb-2 text-xs flex rounded bg-gray-200 border border-gray-300">

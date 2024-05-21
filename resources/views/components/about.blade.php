@@ -5,17 +5,17 @@
         <div id="text">
             <div class="grid grid-rows-1 md:grid-rows-2 gap-y-5">
                 <div class="hidden md:flex md:justify-center">
-                    <img class="w-1/3" src="{{ asset('/images/logo/logo-dark-removebg.png') }}" alt="Logo">
+                    <img class="w-1/3" src="{{ asset('/images/logo/logo-dark-removebg.png') }}" alt="{{ Lang::get('Logo') }}">
                 </div>
 
                 <div>
                     <div class="flex justify-center">
-                        <h3>And more!</h3>
+                        <h3>@lang('And more!')</h3>
                     </div>
 
                     <div class="flex justify-center text-center font-thin px-16">
                         <div>
-                            What you've seen is just the beginning. I love learning, embracing challenges, and ensuring success. Curious to know more? <span id="contactMe" class="nav-item cursor-pointer">Let's chat!</span>
+                            @lang("What you've seen is just the beginning. I love learning, embracing challenges, and ensuring success. Curious to know more?") <span id="contactMe" class="nav-item cursor-pointer">@lang("Let's chat!")</span>
                         </div>
                     </div>
                 </div>
