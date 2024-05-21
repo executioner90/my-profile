@@ -52,7 +52,7 @@
 
             <div
                 class="about-me-card elements-to-animate show-3 col-start-4 py-6 px-3 flex items-center justify-center text-center rounded-3xl">
-                @lang('Highs school education in Syria')
+                @lang('High school education in Syria')
             </div>
         </div>
 
@@ -101,7 +101,7 @@
             @lang('From childhood till now, my dream has been a constant companion, always alive and burning bright - to be a software developer.')
         </div>
         <div class="shadow py-6 px-3 mb-2 text-center">
-            @lang('Highs school education in Syria')
+            @lang('High school education in Syria')
         </div>
         <div class="about-me-card py-6 px-3 my-2 text-center">
             @lang('The catastrophe (Syria 2011)')
