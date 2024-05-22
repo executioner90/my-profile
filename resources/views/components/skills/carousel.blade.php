@@ -1,4 +1,4 @@
-<div class="w-full mx-auto p-8 md:text-lg hidden md:flex justify-center relative bg-white shadow-xl">
+<div class="w-full mx-auto mt-28 p-6 md:text-lg hidden md:flex justify-center relative bg-white shadow-xl">
 
     <button
         id="slide-arrow-prev"
