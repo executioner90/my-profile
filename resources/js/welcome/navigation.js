@@ -69,11 +69,12 @@ document.querySelectorAll('.nav-item').forEach(item => (
                 navigate('projects', mobile);
                 break;
             case 'contactLink' :
+            case 'contactMe' :
                 navigate('contact', mobile);
                 break;
         }
 
-        if (navItem.id === 'reference') {
+        if (['reference', 'contactMe'].includes(navItem.id)) {
             return;
         }
 
