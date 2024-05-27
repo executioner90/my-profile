@@ -12,6 +12,19 @@
     </head>
 
     <body>
+        <div class="fixed top-0 right-0 m-4 z-50">
+            <div class="dropdown group">
+                <span class="text-white px-4 py-2 rounded dropdown-toggle border border-secondary">
+                    {{ strtoupper(Config::get('app.locale')) }}
+                </span>
+
+                <ul class="dropdown-menu hidden group-hover:block absolute top-full right-0 mt-2 w-16 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+                    <li><a href="{{route('welcome',  ['locale' => 'ar'])}}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">AR</a></li>
+                    <li><a href="{{route('welcome')}}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">EN</a></li>
+                </ul>
+            </div>
+        </div>
+
         <x-home></x-home>
 
         <div>
