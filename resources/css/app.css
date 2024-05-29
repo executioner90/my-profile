@@ -198,4 +198,14 @@ body {
     border-radius: 50%;
     cursor: pointer;
 }
+
+#skills .animate-bars {
+    transform: translateX(-100%);
+    transition: opacity 0.8s, transform 0.8s;
+}
+
+#skills .animate-text {
+    transform: translateX(100%);
+    transition: opacity 0.8s, transform 0.8s;
+}
 /* Skills page */
