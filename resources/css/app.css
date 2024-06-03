@@ -208,4 +208,14 @@ body {
     transform: translateX(100%);
     transition: opacity 0.8s, transform 0.8s;
 }
+
+@media screen and (max-width: 767px) {
+    #skills .animate-bars {
+        transform: translateX(-2%);
+    }
+
+    #skills .animate-text {
+            transform: translateX(2%);
+    }
+}
 /* Skills page */
