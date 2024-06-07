@@ -1,5 +1,5 @@
 let animationTriggered = false;
-const bars = document.getElementById('bars');
+const text = document.getElementById('text');
 const aboutObserver = new IntersectionObserver(handleIntersection, {
     root: null,
     rootMargin: '0px',
@@ -7,9 +7,9 @@ const aboutObserver = new IntersectionObserver(handleIntersection, {
 });
 
 // Observe the #about section
-aboutObserver.observe(document.getElementById('skills'));
+aboutObserver.observe(document.getElementById('about'));
 
-bars.style.opacity = '0';
+text.style.opacity = '0';
 
 function handleIntersection(entries, observer) {
     entries.forEach(entry => {
@@ -28,6 +28,6 @@ function animate() {
     animationTriggered = true;
 
     // Trigger animation
-    bars.style.opacity = '1';
-    bars.classList.add('animate-bars');
+    text.style.opacity = '1';
+    text.classList.add('animate-text');
 }

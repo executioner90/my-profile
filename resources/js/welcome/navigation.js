@@ -20,14 +20,11 @@ window.addEventListener("scroll", function() {
                 case 'home':
                     id = 'homeLink';
                     break;
-                case 'skills':
-                    id = 'skillsLink';
-                    break;
                 case 'about':
                     id = 'aboutLink';
                     break;
-                case 'projects':
-                    id = 'projectsLink';
+                case 'more':
+                    id = 'moreLink';
                     break;
                 case 'contact':
                     id = 'contactLink';
@@ -55,18 +52,15 @@ document.querySelectorAll('.nav-item').forEach(item => (
 
         switch (navItem.id) {
             case 'mainNav' :
-            case 'skillsLink':
-                navigate('skills', mobile);
+            case 'aboutLink':
+                navigate('about', mobile);
                 break;
             case 'homeLink' :
                 navigate('home', mobile);
                 break;
-            case 'aboutLink' :
+            case 'moreLink' :
             case 'reference' :
-                navigate('about', mobile);
-                break;
-            case 'projectsLink' :
-                navigate('projects', mobile);
+                navigate('more', mobile);
                 break;
             case 'contactLink' :
             case 'contactMe' :
@@ -79,7 +73,7 @@ document.querySelectorAll('.nav-item').forEach(item => (
         }
 
         if (navItem.id === 'mainNav') {
-            focused(document.getElementById('skillsLink'));
+            focused(document.getElementById('aboutLink'));
         } else {
             focused(navItem);
         }

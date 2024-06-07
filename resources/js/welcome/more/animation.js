@@ -1,13 +1,13 @@
 let animationTriggered = false;
-const elementsToAnimate = Array.from(document.querySelectorAll('#about .elements-to-animate'));
-const aboutObserver = new IntersectionObserver(handleIntersection, {
+const elementsToAnimate = Array.from(document.querySelectorAll('#more .elements-to-animate'));
+const moreObserver = new IntersectionObserver(handleIntersection, {
     root: null,
     rootMargin: '0px',
     threshold: 0.8
 });
 
-// Observe the #about section
-aboutObserver.observe(document.getElementById('about'));
+// Observe the #moresection
+moreObserver.observe(document.getElementById('more'));
 
 elementsToAnimate.forEach(element => {
     // Hide elements initially
@@ -17,13 +17,13 @@ elementsToAnimate.forEach(element => {
 function handleIntersection(entries, observer) {
     entries.forEach(entry => {
         if (entry.isIntersecting && !animationTriggered) {
-            animateAboutSection();
+            animateMoreSection();
             observer.unobserve(entry.target);
         }
     });
 }
 
-function animateAboutSection() {
+function animateMoreSection() {
     if (animationTriggered) {
         return;
     }

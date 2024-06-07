@@ -1,18 +1,18 @@
 <?php
 
-namespace App\View\Components;
+namespace App\View\Components\About;
 
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class Skills extends Component
+class Bars extends Component
 {
-    public array $skills;
+    public array $test;
 
     public function __construct(array $data)
     {
-        $this->skills = $data;
+        $this->test = $data;
     }
 
     /**
@@ -20,6 +20,6 @@ class Skills extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.skills');
+        return view('components.about.bars');
     }
 }

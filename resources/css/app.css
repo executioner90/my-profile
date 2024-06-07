@@ -119,7 +119,7 @@ body {
 }
 /* Navbar */
 
-/* About page */
+/* More page */
 .about-me-special-card{
     background-color: #fe7833;
     color: #ebebe9;
@@ -165,9 +165,9 @@ body {
     transform: translate(0, 0);
     transition: opacity 0.5s, transform 0.5s;
 }
-/* About page */
+/* More page */
 
-/* Skills page */
+/* About page */
 .carousel {
     overflow: hidden;
     scroll-behavior: smooth;
@@ -199,23 +199,23 @@ body {
     cursor: pointer;
 }
 
-#skills .animate-bars {
+#about .animate-bars {
     transform: translateX(-100%);
     transition: opacity 0.8s, transform 0.8s;
 }
 
-#skills .animate-text {
+#about .animate-text {
     transform: translateX(100%);
     transition: opacity 0.8s, transform 0.8s;
 }
 
 @media screen and (max-width: 767px) {
-    #skills .animate-bars {
+    #about .animate-bars {
         transform: translateX(-2%);
     }
 
-    #skills .animate-text {
+    #about .animate-text {
             transform: translateX(2%);
     }
 }
-/* Skills page */
+/* About page */
