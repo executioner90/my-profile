@@ -6,6 +6,12 @@
 @tailwind utilities;
 /* Imports */
 
+:root {
+    --primary-bg-color: rgb(34, 34, 34);
+    --primary-color: #fe7833;
+    --secondary-color: #80c44c;
+}
+
 /* Custom styling */
 body {
     /* Responsive font size */
@@ -26,18 +32,18 @@ body {
 
 /* Home page */
 #myCanvas {
-    background-color: rgb(34, 34, 34);
+    background-color: var(--primary-bg-color);
     position: absolute;
     z-index: -1;
 }
 
 .button {
-    color: #fe7833;
-    border-color: #fe7833;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 .button:hover {
-    background-color: #fe7833;
+    background-color: var(--primary-color);
 }
 
 .hover\:show-down:hover .fa-arrow-right {
@@ -57,7 +63,7 @@ body {
 }
 
 .highlight {
-    color: #fe7833;
+    color: var(--primary-color);
 }
 
 .slogan {
@@ -68,12 +74,12 @@ body {
 
 /* Navbar */
 .nav-item-focused {
-    color: #fe7833 !important;
+    color: var(--primary-color) !important;
     transition: color 0.3s ease-in !important;
 }
 
 .navbar {
-    border-bottom: solid 0.25rem #80c44c;
+    border-bottom: solid 0.25rem var(--secondary-color);
 }
 
 #navbar-links {
@@ -114,14 +120,14 @@ body {
 }
 
 #reference:hover, #contactMe:hover {
-    color: #80c44c;
+    color: var(--secondary-color);
     text-decoration: underline;
 }
 /* Navbar */
 
 /* More page */
 .about-me-special-card{
-    background-color: #fe7833;
+    background-color: var(--primary-color);
     color: #ebebe9;
 
 }
@@ -219,3 +225,8 @@ body {
     }
 }
 /* About page */
+
+/* Contact page */
+#contact {
+    background-color: var(--primary-bg-color);
+}
