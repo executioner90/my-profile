@@ -23,7 +23,7 @@ class Welcome extends BaseController
                 'JQuery' => '75',
                 'CSS' => '70',
                 'Vue.js' => '70',
-                'Node.js' => '40',
+                'Node.js' => '70',
                 'ASP.NET' => '35',
                 'xamarin' => '35',
                 'WordPress' => '20',
