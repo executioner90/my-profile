@@ -233,3 +233,7 @@ body {
 #contact {
     background-color: var(--primary-bg-color);
 }
+
+.border-secondary {
+    border-color: var(--secondary-color);
+}

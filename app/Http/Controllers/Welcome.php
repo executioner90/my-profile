@@ -2,15 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\RedirectResponse;
 use Illuminate\Routing\Controller as BaseController;
-use Illuminate\Http\Request;
 use Illuminate\View\View;
 
 class Welcome extends BaseController
 {
-    public function index(): View
+    public function index(string|null $locale = null): View
     {
+        if (in_array($locale, ['en', 'ar'])) {
+            app()->setLocale($locale);
+        }
+
         return view('welcome')->with([
             'data' => [
                 'HTML' => '90',

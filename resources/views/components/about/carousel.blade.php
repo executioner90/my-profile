@@ -18,11 +18,11 @@
                             </div>
 
                             <div class="text-center text-orange-600 mb-2">
-                                Web Development
+                                @lang('Web development')
                             </div>
 
                             <div class="text-center">
-                                Building and maintaining of websites.
+                                @lang('Building and maintaining of websites.')
                             </div>
                         </div>
 
@@ -32,11 +32,11 @@
                             </div>
 
                             <div class="text-center text-orange-600 mb-2">
-                                Fullstack
+                                @lang('Full-stack')
                             </div>
 
                             <div class="text-center">
-                                Skilled in backend development with a knack for frontend tech.
+                                @lang('Skilled in backend development with a knack for frontend tech.')
                             </div>
                         </div>
 
@@ -47,11 +47,11 @@
                             </div>
 
                             <div class="text-center text-orange-600 mb-2">
-                                Debug skills
+                                @lang('Debug skills')
                             </div>
 
                             <div class="text-center">
-                                detecting and removing of existing errors.
+                                @lang('detecting and removing of existing errors.')
                             </div>
                         </div>
 
@@ -61,11 +61,11 @@
                             </div>
 
                             <div class="text-center text-orange-600 mb-2">
-                                Reviewer
+                                @lang('Reviewer')
                             </div>
 
                             <div class="text-center">
-                                Masterful reviews that speak louder than words.
+                                @lang('Masterful reviews that speak louder than words.')
                             </div>
                         </div>
                     </div>
@@ -80,11 +80,11 @@
                             </div>
 
                             <div class="text-center text-orange-600 mb-2">
-                                Creative
+                                @lang('Creative')
                             </div>
 
                             <div class="text-center">
-                                Finding new ways of solving problems.
+                                @lang('Finding new ways of solving problems.')
                             </div>
                         </div>
 
@@ -94,11 +94,11 @@
                             </div>
 
                             <div class="text-center text-orange-600 mb-2">
-                                Teamwork
+                                @lang('Teamwork')
                             </div>
 
                             <div class="text-center">
-                                Team player extraordinaire: I turn collaboration into success!
+                                @lang('Team player extraordinaire: I turn collaboration into success!')
                             </div>
                         </div>
 
@@ -108,11 +108,11 @@
                             </div>
 
                             <div class="text-center text-orange-600 mb-2">
-                                Flexible
+                                @lang('Flexible')
                             </div>
 
                             <div class="text-center">
-                                Adaptable availability for various schedules and circumstances.
+                                @lang('Adaptable availability for various schedules and circumstances.')
                             </div>
                         </div>
 
@@ -123,11 +123,11 @@
                             </div>
 
                             <div class="text-center text-orange-600 mb-2">
-                                Dedication and commitment
+                                @lang('Dedication and commitment')
                             </div>
 
                             <div class="text-center">
-                                Unwavering dedication, unwavering commitment.
+                                @lang('Unwavering dedication, unwavering commitment.')
                             </div>
                         </div>
                     </div>
@@ -142,11 +142,11 @@
                             </div>
 
                             <div class="text-center text-orange-600 mb-2">
-                                Resilience
+                                @lang('Resilience')
                             </div>
 
                             <div class="text-center">
-                                Work under pressure and optimize the current situation.
+                                @lang('Work under pressure and optimize the current situation.')
                             </div>
                         </div>
 
@@ -156,11 +156,11 @@
                             </div>
 
                             <div class="text-center text-orange-600 mb-2">
-                                Ambition
+                                @lang('Ambition')
                             </div>
 
                             <div class="text-center">
-                                Unbounded ambitions fueled by relentless effort.
+                                @lang('Unbounded ambitions fueled by relentless effort.')
                             </div>
                         </div>
 
@@ -170,14 +170,11 @@
                             </div>
 
                             <div class="text-center text-orange-600 mb-2">
-                                Wondering how!
+                                @lang('Wondering how!')
                             </div>
 
                             <div class="text-center">
-                                <span id="reference" class="nav-item cursor-pointer">click here</span> to view my bio
-                                detailing my
-                                journey
-                                and skill acquisition.
+                                <span id="reference" class="nav-item cursor-pointer">@lang('Click here')</span> @lang('to view my bio detailing my journey and skill acquisition.')
                             </div>
                         </div>
                     </div>

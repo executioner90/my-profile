@@ -14,5 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [Welcome::class, 'index'])
+Route::get('/{locale?}', [Welcome::class, 'index'])
     ->name('welcome');

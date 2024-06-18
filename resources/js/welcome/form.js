@@ -34,11 +34,21 @@ document.getElementById('form').addEventListener('submit', function(e) {
         message: message.value.trim()
     })
         .then(() => {
-            responseMessage.innerText = 'Your message/question has been sent. Thank you!';
+            if (navigator.language === 'en-US') {
+                responseMessage.innerText = 'Your message/question has been sent. Thank you!';
+            } else {
+                responseMessage.innerText = 'لقد تم إرسال رسالتك/سؤالك. شكرًا لك!';
+            }
+
             responseMessage.style.color = 'green';
         })
         .catch(() => {
-            responseMessage.innerText = 'Submission failed. Please retry or Contact me below';
+            if (navigator.language === 'en-US') {
+                responseMessage.innerText = 'Submission failed. Please retry or Contact me via options below';
+            } else {
+                responseMessage.innerText = 'فشل التقديم. يرجى إعادة المحاولة أو الاتصال بي عبر الخيارات أدناه';
+            }
+
             responseMessage.style.color = 'red';
         });
 });
