@@ -46,5 +46,5 @@
     </div>
 </div>
 <footer class="primary-bg">
-    <span class="text-white text-sm"> <i class="fa fa-copyright"></i> Copyright 2024 - powered by Mohammad Aldaas</span>
+    <span class="text-white text-sm">Copyright <i class="fa fa-copyright"></i> {{ date('Y') }} - powered by Mohammad Aldaas</span>
 </footer>
